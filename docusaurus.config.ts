@@ -2,6 +2,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const isProd = process.env.NODE_ENV === 'production';
+
 // This config runs in Node.js, so avoid using browser APIs or JSX here.
 const config: Config = {
   title: 'GovTech Hackathon',
@@ -11,12 +13,12 @@ const config: Config = {
   // The production URL of your site
   url: 'https://govtech-hackathon.example.com',
   // The /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/',
+  baseUrl: isProd ? '/govtech-website/' : '/', // lokaler Modus vs. Produktion
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you can remove these.
-  organizationName: 'YourOrg', // Your GitHub org/user name
-  projectName: 'govtech-hackathon-site', // Your repo name
+  organizationName: 'East-Side-Fab', // Your GitHub org/user name
+  projectName: 'govtech-website', // Your repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
