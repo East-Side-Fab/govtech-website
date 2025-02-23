@@ -1,19 +1,19 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+hackathon:
+  label: Hackathon
+  permalink: /tags/hackathon
+  description: Beiträge rund um unseren GovTech Hackathon
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+govtech:
+  label: GovTech
+  permalink: /tags/govtech
+  description: Alles über technologische Innovation im öffentlichen Sektor
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+innovation:
+  label: Innovation
+  permalink: /tags/innovation
+  description: Neueste Ideen und Konzepte für nachhaltige Veränderungen
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+event:
+  label: Event
+  permalink: /tags/event
+  description: Neuigkeiten und Informationen zu unseren Veranstaltungen

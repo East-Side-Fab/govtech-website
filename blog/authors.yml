@@ -1,23 +1,8 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+daniel:
+  name: Daniel Silva F.
+  title: Designer für systemische Gestaltung
+  url: https://www.linkedin.com/in/daniel-silva-f-8a2618237/
+  image_url: https://media.licdn.com/dms/image/v2/D4E03AQGKdH9rgoDS_A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1700746006987?e=1745452800&v=beta&t=2mhTLhQJtmAkZL0xhVLVFAvXuoxLQiva2_w7-_N_5JA
   page: true
   socials:
-    x: yangshunz
-    github: yangshun
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
-  socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    linkedin: https://www.linkedin.com/in/daniel-silva-f-8a2618237/
