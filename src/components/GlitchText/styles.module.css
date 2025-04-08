@@ -1,0 +1,90 @@
+/* src/components/GlitchText/styles.module.css */
+.glitchText {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+.glitchTextMain,
+.glitchTextRed,
+.glitchTextBlue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitchTextMain {
+    position: relative;
+    z-index: 2;
+}
+
+.glitchTextRed {
+    color: rgba(255, 83, 112, 0.8);
+    z-index: 1;
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.glitchTextBlue {
+    color: rgba(34, 211, 238, 0.8);
+    z-index: 1;
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+    0% {
+        clip-path: inset(10% 0 80% 0);
+        transform: translate(-1px, 1px);
+    }
+    20% {
+        clip-path: inset(30% 0 50% 0);
+        transform: translate(1px, -1px);
+    }
+    40% {
+        clip-path: inset(50% 0 30% 0);
+        transform: translate(3px, 2px);
+    }
+    60% {
+        clip-path: inset(20% 0 60% 0);
+        transform: translate(-3px, 1px);
+    }
+    80% {
+        clip-path: inset(70% 0 10% 0);
+        transform: translate(1px, -2px);
+    }
+    100% {
+        clip-path: inset(10% 0 90% 0);
+        transform: translate(-1px, 3px);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        clip-path: inset(20% 0 70% 0);
+        transform: translate(1px, -1px);
+    }
+    20% {
+        clip-path: inset(40% 0 40% 0);
+        transform: translate(-1px, 1px);
+    }
+    40% {
+        clip-path: inset(60% 0 20% 0);
+        transform: translate(2px, 3px);
+    }
+    60% {
+        clip-path: inset(30% 0 50% 0);
+        transform: translate(-2px, -1px);
+    }
+    80% {
+        clip-path: inset(50% 0 30% 0);
+        transform: translate(1px, 2px);
+    }
+    100% {
+        clip-path: inset(70% 0 10% 0);
+        transform: translate(-1px, -1px);
+    }
+}

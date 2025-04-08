@@ -1,30 +1,106 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    /* Primary Colors */
+    --ifm-color-primary: #22d3ee;
+    --ifm-color-primary-dark: #0cb4d8;
+    --ifm-color-primary-darker: #0ba7c9;
+    --ifm-color-primary-darkest: #098aa5;
+    --ifm-color-primary-light: #3bd9f0;
+    --ifm-color-primary-lighter: #4adcf1;
+    --ifm-color-primary-lightest: #74e4f4;
+
+    /* Secondary Colors */
+    --ifm-color-secondary: #7c3aed;
+    --ifm-color-secondary-dark: #6d28d9;
+    --ifm-color-secondary-darker: #5b21b6;
+    --ifm-color-secondary-darkest: #4c1d95;
+    --ifm-color-secondary-light: #8b5cf6;
+    --ifm-color-secondary-lighter: #a78bfa;
+    --ifm-color-secondary-lightest: #c4b5fd;
+
+    /* Background Colors */
+    --ifm-background-color: #0c0f16;
+    --ifm-background-surface-color: #161b2b;
+
+    /* Text Colors */
+    --ifm-font-color-base: #e2e8f0;
+    --ifm-font-color-secondary: #94a3b8;
+    --ifm-heading-color: #f8fafc;
+
+    /* Terminal Colors */
+    --terminal-bg: #0a0e17;
+    --terminal-text: #7dd3fc;
+    --terminal-prompt: #f87171;
+    --terminal-command: #a5f3fc;
+    --terminal-output: #c4b5fd;
+    --terminal-comment: #64748b;
+
+    /* Code Colors */
+    --code-bg: #121824;
+    --code-function: #f472b6;
+    --code-string: #a5b4fc;
+    --code-keyword: #7dd3fc;
+    --code-variable: #fcd34d;
+    --code-comment: #64748b;
+
+    /* UI Elements */
+    --card-bg: rgba(22, 27, 43, 0.7);
+    --card-border: rgba(34, 211, 238, 0.2);
+    --card-hover-border: rgba(34, 211, 238, 0.5);
+
+    --grid-line: rgba(34, 211, 238, 0.1);
+    --grid-highlight: rgba(34, 211, 238, 0.3);
+
+    --glow-primary: rgba(34, 211, 238, 0.5);
+    --glow-secondary: rgba(124, 58, 237, 0.5);
+
+    --btn-primary-bg: rgba(22, 27, 43, 0.8);
+    --btn-primary-border: rgba(34, 211, 238, 0.7);
+    --btn-primary-text: #22d3ee;
+
+    --btn-secondary-bg: rgba(22, 27, 43, 0.8);
+    --btn-secondary-border: rgba(124, 58, 237, 0.7);
+    --btn-secondary-text: #a78bfa;
+
+    /* Utils */
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(34, 211, 238, 0.1);
+
+    /* Fonts */
+    --ifm-font-family-base:
+        "JetBrains Mono", "SF Mono", "Roboto Mono", monospace;
+    --ifm-font-family-heading:
+        "JetBrains Mono", "SF Mono", "Roboto Mono", monospace;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* Base Overrides */
+body {
+    background-color: var(--ifm-background-color);
+    font-family: var(--ifm-font-family-base);
+    color: var(--ifm-font-color-base);
+    background-image:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(34, 211, 238, 0.1) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(124, 58, 237, 0.15) 0%,
+            transparent 50%
+        );
+    background-attachment: fixed;
 }
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ifm-font-family-heading);
+    letter-spacing: -0.025em;
+}
+
+/* Add JetBrains Mono font */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap");

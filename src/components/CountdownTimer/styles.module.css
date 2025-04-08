@@ -1,0 +1,84 @@
+.countdownContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: rgba(12, 15, 22, 0.7);
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+}
+
+.timeUnit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.timeValue {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "JetBrains Mono", monospace;
+    color: var(--ifm-color-primary);
+    text-shadow: 0 0 10px var(--glow-primary);
+    background: linear-gradient(
+        180deg,
+        var(--ifm-color-primary) 0%,
+        var(--ifm-color-primary-darker) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.timeLabel {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    color: var(--ifm-font-color-secondary);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.timeSeparator {
+    font-size: 2rem;
+    color: var(--ifm-color-secondary);
+    font-weight: 700;
+    line-height: 1;
+    margin-top: -0.5rem;
+    text-shadow: 0 0 5px var(--glow-secondary);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 576px) {
+    .countdownContainer {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .timeUnit {
+        min-width: 60px;
+    }
+
+    .timeValue {
+        font-size: 1.8rem;
+    }
+
+    .timeLabel {
+        font-size: 0.6rem;
+    }
+
+    .timeSeparator {
+        font-size: 1.5rem;
+    }
+}

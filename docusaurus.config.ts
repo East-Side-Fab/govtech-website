@@ -1,59 +1,59 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
-const isProd = process.env.NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === "production";
 
 // This config runs in Node.js, so avoid using browser APIs or JSX here.
 const config: Config = {
-  title: 'GovTech Hackathon',
-  tagline: 'Boost the Public Sector',
-  favicon: 'img/favicon.ico',
+  title: "GovTech Hackathon",
+  tagline: "Boost the Public Sector",
+  favicon: "img/favicon.ico",
 
   // The production URL of your site
-  url: 'https://govtech-hackathon.example.com',
+  url: "https://govtech-hackathon.example.com",
   // The /<baseUrl>/ pathname under which your site is served
-  baseUrl: isProd ? '/govtech-website/' : '/', // lokaler Modus vs. Produktion
+  baseUrl: isProd ? "/govtech-website/" : "/", // lokaler Modus vs. Produktion
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you can remove these.
-  organizationName: 'East-Side-Fab', // Your GitHub org/user name
-  projectName: 'govtech-website', // Your repo name
+  organizationName: "East-Side-Fab", // Your GitHub org/user name
+  projectName: "govtech-website", // Your repo name
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Set the default language for the site
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Adjust the editUrl to point to your own GitHub repository.
           editUrl:
-            'https://github.com/YourOrg/govtech-hackathon-site/tree/main/',
+            "https://github.com/YourOrg/govtech-hackathon-site/tree/main/",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           editUrl:
-            'https://github.com/YourOrg/govtech-hackathon-site/tree/main/',
+            "https://github.com/YourOrg/govtech-hackathon-site/tree/main/",
           // Enforce best practices in blog posts
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -61,78 +61,71 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card or a relevant image
-    image: 'img/hackathon-social-card.jpg',
+    image: "img/hackathon-social-card.jpg",
     navbar: {
-      title: 'GovTech Hackathon',
-      logo: {
-        alt: 'GovTech Hackathon Logo',
-        src: 'img/logo.svg',
-      },
+      title: "GovTech Hackathon",
       items: [
         // Example docs link
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Docs',
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Docs",
         },
-        // Example blog link
-        { to: '/blog', label: 'Blog', position: 'left' },
-        // GitHub link
+        { to: "/anmelden", label: "Anmelden", position: "left" },
+        { to: "/blog", label: "Blog", position: "right" },
         {
-          href: 'https://github.com/YourOrg/govtech-hackathon-site',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/East-Side-Fab/govtech-website",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Resources',
+          title: "Resources",
           items: [
             {
-              label: 'Documentation',
-              to: '/docs/intro',
+              label: "Documentation",
+              to: "/docs/intro",
             },
             {
-              label: 'Blog',
-              to: '/blog',
+              label: "Blog",
+              to: "/blog",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Discord",
+              href: "https://discordapp.com/invite/docusaurus",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/yourorg',
+              label: "Twitter",
+              href: "https://twitter.com/yourorg",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/YourOrg/govtech-hackathon-site',
+              label: "GitHub",
+              href: "https://github.com/YourOrg/govtech-hackathon-site",
             },
           ],
         },
       ],
       // Update the copyright
-      copyright: `Copyright © ${
-        new Date().getFullYear()
-      } GovTech Hackathon. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} GovTech Hackathon. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
