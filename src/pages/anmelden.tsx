@@ -1,37 +1,69 @@
 import React, { useState } from "react";
 import Layout from "@theme/Layout";
-import styles from "./anmelden.module.css"; // Using a dedicated CSS module
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import styles from "./anmelden.module.css";
 import { GlitchText } from "../components/GlitchText";
 import { ParticleBackground } from "../components/ParticleBackground";
 
-// Mailchimp URL - replace with your actual URL
-const MAILCHIMP_URL =
-  "https://yourdomain.us7.list-manage.com/subscribe/post?u=XXXXX&id=XXXXXX";
-
-// Custom form that works with Mailchimp
-const CustomForm = ({ status, message, onValidated }) => {
+// Custom form that uses the Fermyon API
+const RegistrationForm = () => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [organization, setOrganization] = useState("");
   const [formError, setFormError] = useState("");
+  const [status, setStatus] = useState("idle"); // idle, sending, success, error
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setFormError("");
+    setMessage("");
 
     if (!email || !firstName) {
       setFormError("Please fill in the required fields");
       return;
     }
 
-    onValidated({
-      EMAIL: email,
-      FNAME: firstName,
-      LNAME: lastName,
-      ORGANIZATION: organization,
-    });
+    try {
+      setStatus("sending");
+
+      // Prepare data for the API
+      const formData = {
+        mail: email,
+        first_name: firstName,
+        last_name: lastName || "",
+        // Include organization if needed in your API
+        // organization: organization
+      };
+
+      // Send data to the Fermyon API
+      const response = await fetch(
+        "https://participants-pp4aag1w.fermyon.app/participants",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error(`Registration failed: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      setStatus("success");
+      setMessage(
+        "Registration successful! You've been added to our hacker database.",
+      );
+    } catch (error) {
+      console.error("Registration error:", error);
+      setStatus("error");
+      setMessage(
+        error.message || "Registration failed. Please try again later.",
+      );
+    }
   };
 
   return (
@@ -49,14 +81,14 @@ const CustomForm = ({ status, message, onValidated }) => {
         {status === "sending" && (
           <div className={styles.formStatus}>
             <div className={styles.loader}></div>
-            <span>Sending...</span>
+            <span>Sending registration data...</span>
           </div>
         )}
 
         {status === "error" && (
           <div className={styles.formError}>
             <span className={styles.errorIcon}>!</span>
-            <div dangerouslySetInnerHTML={{ __html: message }} />
+            <div>{message}</div>
           </div>
         )}
 
@@ -70,6 +102,9 @@ const CustomForm = ({ status, message, onValidated }) => {
               You've been added to our hacker database. We'll transmit further
               instructions soon.
             </p>
+            <pre className={styles.successCode}>
+              {`curl -X POST -d '{"mail":"${email}", "first_name":"${firstName}","last_name":"${lastName}"}' "https://participants-pp4aag1w.fermyon.app/participants" --verbose`}
+            </pre>
           </div>
         )}
 
@@ -201,16 +236,7 @@ export default function RegistrationPage(): React.ReactElement {
             </p>
           </div>
 
-          <MailchimpSubscribe
-            url={MAILCHIMP_URL}
-            render={({ subscribe, status, message }) => (
-              <CustomForm
-                status={status}
-                message={message}
-                onValidated={(formData) => subscribe(formData)}
-              />
-            )}
-          />
+          <RegistrationForm />
 
           <div className={styles.sectionOutro}>
             <h2 className={styles.sectionTitle}>{`}`}</h2>
