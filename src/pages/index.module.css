@@ -42,6 +42,7 @@
     text-align: center;
     padding: 2rem;
     max-width: 800px;
+    width: 100%;
 }
 
 .heroContent h1 {
@@ -60,6 +61,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .bracket {
@@ -78,6 +80,7 @@
     gap: 1rem;
     justify-content: center;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .primaryBtn,
@@ -92,6 +95,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
     border-radius: 4px;
+    margin-bottom: 0.5rem;
 }
 
 .primaryBtn {
@@ -144,6 +148,8 @@
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Terminal section */
@@ -195,6 +201,7 @@
     font-family: "JetBrains Mono", monospace;
     font-size: 0.9rem;
     line-height: 1.6;
+    overflow-x: auto;
 }
 
 .terminalLine {
@@ -204,6 +211,8 @@
     transition:
         opacity 0.3s ease,
         transform 0.3s ease;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 .terminalLine.visible {
@@ -239,6 +248,7 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--ifm-color-primary);
+    word-break: break-word;
 }
 
 .codeComment {
@@ -280,10 +290,15 @@
     border: 1px solid var(--card-border);
     padding: 2rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+    max-width: 100%; /* Prevent overflow */
+    overflow: hidden; /* Hide any overflow */
 }
 
 .whereContent {
     position: relative;
+    width: 100%; /* Ensure content takes full width */
 }
 
 .whereData {
@@ -296,21 +311,30 @@
 .whereCoordinates {
     flex: 1;
     min-width: 300px;
+    max-width: 100%; /* Add this to prevent overflow */
+    overflow-wrap: break-word; /* Add this to handle long words */
 }
 
 .coordinate {
     display: flex;
     margin-bottom: 1rem;
     font-family: "JetBrains Mono", monospace;
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 .coordLabel {
     width: 80px;
+    min-width: 80px; /* Add this to maintain label width */
     color: var(--code-keyword);
 }
 
 .coordValue {
     color: var(--code-variable);
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: calc(
+        100% - 80px
+    ); /* Ensure value doesn't push beyond container */
 }
 
 .coordinateName {
@@ -318,6 +342,42 @@
     border-top: 1px dashed var(--card-border);
     padding-top: 1rem;
     display: flex;
+    flex-wrap: wrap;
+}
+
+/* Additional responsive fixes for small screens */
+@media (max-width: 480px) {
+    .whereCoordinates {
+        min-width: 100%; /* Take full width on small screens */
+    }
+
+    .coordinate {
+        margin-bottom: 0.75rem;
+    }
+
+    .coordLabel {
+        width: 70px;
+        min-width: 70px;
+        font-size: 0.9rem;
+    }
+
+    .coordValue {
+        font-size: 0.9rem;
+        max-width: calc(100% - 70px);
+    }
+}
+
+@media (max-width: 360px) {
+    .coordLabel {
+        width: 60px;
+        min-width: 60px;
+        font-size: 0.85rem;
+    }
+
+    .coordValue {
+        font-size: 0.85rem;
+        max-width: calc(100% - 60px);
+    }
 }
 
 .whereMap {
@@ -391,6 +451,9 @@
     padding: 2rem;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .challengeCard:hover {
@@ -414,6 +477,7 @@
 .challengeCard p {
     color: var(--ifm-font-color-secondary);
     line-height: 1.5;
+    flex-grow: 1;
 }
 
 /* CTA section */
@@ -449,6 +513,7 @@
     position: relative;
     z-index: 1;
     text-align: left;
+    word-break: break-word;
 }
 
 .ctaText {
@@ -492,8 +557,53 @@
     font-weight: bold;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments - Enhanced */
+@media (max-width: 1200px) {
+    .mainContent {
+        padding: 2rem 2rem;
+    }
+
+    .heroContent h1 {
+        font-size: 3.5rem;
+    }
+
+    .sectionTitle {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 996px) {
+    .heroContent h1 {
+        font-size: 3rem;
+    }
+
+    .heroTagline {
+        font-size: 1.3rem;
+    }
+
+    .ctaSection {
+        padding: 2.5rem 2rem;
+    }
+
+    .ctaText {
+        padding-left: 1rem;
+    }
+
+    .challengeCards {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero {
+        min-height: 70vh;
+    }
+
+    .heroContent {
+        padding: 1.5rem;
+    }
+
     .heroContent h1 {
         font-size: 2.5rem;
     }
@@ -511,10 +621,164 @@
     }
 
     .whereData {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 2rem 0;
+        width: 100%; /* Ensure full width containment */
+    }
+
+    .whereMap {
+        flex: 1;
+        min-width: 300px;
+        max-width: 100%; /* Prevent overflow */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .mapPlaceholder {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        overflow: hidden;
+        box-sizing: border-box; /* Include border in width calculation */
+    }
+
+    /* Add responsive adjustments for map */
+    @media (max-width: 768px) {
+        .whereData {
+            gap: 1.5rem;
+        }
+
+        .whereMap {
+            min-width: 100%; /* Take full width on smaller screens */
+        }
+
+        .mapPlaceholder {
+            height: 220px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .whereData {
+            gap: 1rem;
+        }
+
+        .mapPlaceholder {
+            height: 200px;
+        }
     }
 
     .ctaSection {
-        padding: 2rem 1rem;
+        padding: 2rem 1.5rem;
+        margin: 4rem 0 2rem;
+    }
+
+    .ctaButton {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .terminalSection {
+        margin: 2rem 0;
+    }
+
+    .terminal {
+        padding: 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    .challengeCard {
+        padding: 1.5rem;
+    }
+
+    .cardIcon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 60vh;
+    }
+
+    .heroContent h1 {
+        font-size: 2rem;
+        letter-spacing: 0.05em;
+    }
+
+    .heroTagline {
+        font-size: 1rem;
+    }
+
+    .bracket {
+        font-size: 1.5rem;
+    }
+
+    .heroButtons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .primaryBtn,
+    .secondaryBtn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .mainContent {
+        padding: 1.5rem 1rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.75rem;
+    }
+
+    .sectionSubtitle {
+        font-size: 1.1rem;
+    }
+
+    .whereSection {
+        padding: 1.5rem 1rem;
+    }
+
+    .ctaSection {
+        padding: 1.5rem 1rem;
+    }
+
+    .ctaText {
+        padding-left: 0;
+    }
+
+    .challengeCards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .terminal {
+        font-size: 0.8rem;
+    }
+
+    .output {
+        padding-left: 0.75rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .heroContent h1 {
+        font-size: 1.75rem;
+    }
+
+    .terminalCircle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .ctaButton {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
     }
 }

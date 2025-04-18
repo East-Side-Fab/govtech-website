@@ -8,6 +8,7 @@
     background-color: rgba(12, 15, 22, 0.7);
     border-radius: 8px;
     border: 1px solid var(--card-border);
+    flex-wrap: wrap;
 }
 
 .timeUnit {
@@ -30,6 +31,7 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 1.2;
 }
 
 .timeLabel {
@@ -60,10 +62,31 @@
     }
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .countdownContainer {
+        padding: 1.25rem 1rem;
+        gap: 0.75rem;
+    }
+
+    .timeUnit {
+        min-width: 70px;
+    }
+
+    .timeValue {
+        font-size: 2.2rem;
+    }
+
+    .timeSeparator {
+        font-size: 1.8rem;
+    }
+}
+
 @media (max-width: 576px) {
     .countdownContainer {
-        flex-wrap: wrap;
+        padding: 1rem 0.75rem;
         gap: 0.5rem;
+        justify-content: space-around;
     }
 
     .timeUnit {
@@ -80,5 +103,50 @@
 
     .timeSeparator {
         font-size: 1.5rem;
+        margin-top: -0.25rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .countdownContainer {
+        padding: 0.75rem 0.5rem;
+        gap: 0.25rem;
+    }
+
+    .timeUnit {
+        min-width: 50px;
+    }
+
+    .timeValue {
+        font-size: 1.5rem;
+    }
+
+    .timeLabel {
+        font-size: 0.5rem;
+        letter-spacing: 0.05em;
+    }
+
+    .timeSeparator {
+        font-size: 1.25rem;
+        margin: 0 -0.1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .countdownContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem 0.25rem;
+    }
+
+    .timeUnit {
+        min-width: 40px;
+        width: calc(50% - 0.5rem);
+        margin-bottom: 0.5rem;
+    }
+
+    /* Hide separators on extra small screens */
+    .timeSeparator {
+        display: none;
     }
 }

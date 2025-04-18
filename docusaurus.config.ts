@@ -9,6 +9,16 @@ const config: Config = {
   title: "GovTech Hackathon",
   tagline: "Boost the Public Sector",
   favicon: "img/favicon.ico",
+  headTags: [
+    {
+      tagName: "meta",
+      attributes: {
+        name: "viewport",
+        content:
+          "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+      },
+    },
+  ],
 
   // The production URL of your site
   url: "https://govtech-hackathon.example.com",
