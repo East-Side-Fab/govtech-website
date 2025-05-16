@@ -87,6 +87,7 @@ const config: Config = {
           position: "left",
           label: "Info",
         },
+        { to: "/events", label: "Events", position: "left" },
         { to: "/anmelden", label: "Anmelden", position: "left" },
         {
           href: "https://github.com/East-Side-Fab/govtech-website",

@@ -1,0 +1,447 @@
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 40vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.gridOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(to right, var(--grid-line) 0.5px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line) 0.5px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.gridOverlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at center,
+        transparent 0%,
+        var(--ifm-background-color) 80%
+    );
+    z-index: 2;
+}
+
+.headerContent {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+.headerTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--ifm-heading-color);
+    letter-spacing: -0.01em;
+}
+
+.headerDescription {
+    font-size: 1.25rem;
+    color: var(--ifm-color-primary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main content */
+.mainContent {
+    position: relative;
+    z-index: 2;
+    padding: 2rem 1rem 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sectionIntro {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.introText {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Timeline styling */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timelineLine {
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--ifm-color-primary);
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.eventsContainer {
+    position: relative;
+    z-index: 2;
+}
+
+.timelineEvent {
+    position: relative;
+    margin-bottom: 2.5rem;
+    margin-left: 3rem;
+}
+
+.timelineDot {
+    position: absolute;
+    left: -3rem;
+    top: 2rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--ifm-color-primary);
+    box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.2);
+    z-index: 3;
+}
+
+/* Event cards styling */
+.eventCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.eventCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    border-color: var(--card-hover-border);
+}
+
+.eventMeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--card-border);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.eventDate {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.eventDay {
+    font-weight: 600;
+    color: var(--ifm-color-primary);
+    font-size: 1.1rem;
+}
+
+.eventTime {
+    font-size: 0.9rem;
+    color: var(--ifm-font-color-secondary);
+}
+
+.eventTypeLabel {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: rgba(124, 58, 237, 0.2);
+    color: var(--ifm-color-secondary-lighter);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.eventTypeworkshop .eventTypeLabel {
+    background-color: rgba(34, 211, 238, 0.2);
+    color: var(--ifm-color-primary-lighter);
+    border-color: rgba(34, 211, 238, 0.3);
+}
+
+.eventTypemeetup .eventTypeLabel {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.eventTypeinfo .eventTypeLabel {
+    background-color: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+    border-color: rgba(251, 191, 36, 0.3);
+}
+
+.eventContent {
+    padding: 1.5rem;
+}
+
+.eventTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--ifm-heading-color);
+}
+
+.eventLocation {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--ifm-font-color-secondary);
+    font-size: 0.95rem;
+}
+
+.locationIcon {
+    color: var(--ifm-color-primary);
+}
+
+.eventDescription {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.eventActions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.registerButton {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.25rem;
+    border-radius: 6px;
+    background-color: var(--btn-primary-bg);
+    border: 1px solid var(--btn-primary-border);
+    color: var(--btn-primary-text);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.registerButton:hover {
+    background-color: rgba(34, 211, 238, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+/* Final event - Hackathon */
+.timelineFinalEvent {
+    position: relative;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.finalEventDot {
+    position: absolute;
+    left: -3rem;
+    top: 1rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--ifm-color-primary);
+    box-shadow:
+        0 0 0 6px rgba(34, 211, 238, 0.25),
+        0 0 20px rgba(34, 211, 238, 0.5);
+    z-index: 3;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow:
+            0 0 0 6px rgba(34, 211, 238, 0.25),
+            0 0 20px rgba(34, 211, 238, 0.5);
+    }
+    70% {
+        box-shadow:
+            0 0 0 12px rgba(34, 211, 238, 0),
+            0 0 30px rgba(34, 211, 238, 0);
+    }
+    100% {
+        box-shadow:
+            0 0 0 6px rgba(34, 211, 238, 0.25),
+            0 0 20px rgba(34, 211, 238, 0.5);
+    }
+}
+
+.finalEventCard {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: rgba(34, 211, 238, 0.15);
+    border: 2px solid var(--ifm-color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finalEventCard h3 {
+    font-size: 1.75rem;
+    margin: 0;
+    color: var(--ifm-color-primary);
+}
+
+.finalEventDate {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--ifm-heading-color);
+}
+
+/* CTA Section */
+.ctaSection {
+    margin-top: 5rem;
+    padding: 3rem;
+    border-radius: 12px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    text-align: center;
+}
+
+.ctaSection h2 {
+    color: var(--ifm-color-primary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ctaSection p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.primaryButton {
+    background-color: var(--btn-primary-bg);
+    border: 1px solid var(--btn-primary-border);
+    color: var(--btn-primary-text);
+}
+
+.secondaryButton {
+    background-color: var(--btn-secondary-bg);
+    border: 1px solid var(--btn-secondary-border);
+    color: var(--btn-secondary-text);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .headerTitle {
+        font-size: 2.5rem;
+    }
+
+    .headerDescription {
+        font-size: 1.1rem;
+    }
+
+    .timelineLine {
+        left: 1rem;
+    }
+
+    .timelineEvent {
+        margin-left: 2.5rem;
+    }
+
+    .timelineDot,
+    .finalEventDot {
+        left: -2.5rem;
+    }
+
+    .timelineFinalEvent {
+        margin-left: 2.5rem;
+    }
+
+    .ctaSection {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .headerTitle {
+        font-size: 2rem;
+    }
+
+    .eventMeta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .timelineLine {
+        left: 0.75rem;
+    }
+
+    .timelineEvent {
+        margin-left: 2rem;
+    }
+
+    .timelineDot,
+    .finalEventDot {
+        left: -2rem;
+        width: 12px;
+        height: 12px;
+    }
+
+    .finalEventDot {
+        width: 18px;
+        height: 18px;
+    }
+
+    .timelineFinalEvent {
+        margin-left: 2rem;
+    }
+
+    .finalEventCard {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
