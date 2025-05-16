@@ -80,7 +80,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Docs",
+          label: "Info",
         },
         { to: "/anmelden", label: "Anmelden", position: "left" },
         {

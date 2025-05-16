@@ -1,10 +1,11 @@
 ---
 title: "GovTech Hackathon"
+sidebar_position: 0
 ---
 
 # Willkommen zum GovTech Hackathon!
 
-Herzlich willkommen zum GovTech Hackathon – **Boost the Public Sector**!  
+Herzlich willkommen zum GovTech Hackathon – **Boost the Public Sector**!
 Auf diesen Seiten findest du alle Informationen rund um den Hackathon:
 - Was ist GovTech?
 - Wie läuft ein Hackathon ab?
