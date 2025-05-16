@@ -162,10 +162,10 @@ export default function EventsPage(): JSX.Element {
               Vorbereitungsveranstaltungen ist kostenlos.
             </p>
             <div className={styles.ctaButtons}>
-              <a href="/anmelden" className={styles.primaryButton}>
+              <a href=" anmelden" className={styles.primaryButton}>
                 Zur Anmeldung
               </a>
-              <a href="/docs/faq" className={styles.secondaryButton}>
+              <a href="docs/faq" className={styles.secondaryButton}>
                 FAQ
               </a>
             </div>

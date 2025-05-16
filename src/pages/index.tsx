@@ -52,11 +52,11 @@ export default function Hackathon(): JSX.Element {
           </div>
 
           <div className={styles.heroButtons}>
-            <a href="/anmelden" className={styles.primaryBtn}>
+            <a href="anmelden" className={styles.primaryBtn}>
               <span className={styles.btnGlow}></span>
               <span>Jetzt anmelden</span>
             </a>
-            <a href="/docs/faq" className={styles.secondaryBtn}>
+            <a href="docs/faq" className={styles.secondaryBtn}>
               <span>Mehr Infos</span>
             </a>
           </div>
@@ -214,7 +214,7 @@ export default function Hackathon(): JSX.Element {
             öffentlichen Sektors mit
           </p>
           <div className={styles.ctaButtonContainer}>
-            <a href="/anmelden" className={styles.ctaButton}>
+            <a href="anmelden" className={styles.ctaButton}>
               Jetzt registrieren
             </a>
           </div>
