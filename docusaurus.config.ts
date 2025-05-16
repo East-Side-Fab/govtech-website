@@ -73,7 +73,12 @@ const config: Config = {
     // Replace with your project's social card or a relevant image
     image: "img/hackathon-social-card.jpg",
     navbar: {
-      title: "GovTech Hackathon",
+      logo: {
+        alt: "East Side Fab Logo",
+        src: "img/logo.svg", // Update this path to match your actual file name
+        srcDark: "img/logo.svg", // Optional: a different logo for dark mode if needed
+        height: 200,
+      },
       items: [
         // Example docs link
         {

@@ -104,3 +104,33 @@ h6 {
 
 /* Add JetBrains Mono font */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap");
+
+/* Navbar logo adjustment */
+/* Navbar adjustments for larger logo */
+.navbar {
+    height: auto; /* Allow the navbar to expand based on content */
+    padding: 0.75rem 1rem; /* Add more vertical padding */
+}
+
+/* Logo adjustments */
+.navbar__logo {
+    height: 64px; /* Let the logo maintain its aspect ratio */
+    max-height: 64px; /* Set a maximum height - adjust this value based on your logo size */
+    margin-right: 1rem;
+}
+
+.navbar__brand {
+    align-items: center; /* Ensure vertical centering */
+}
+
+/* Ensure other navbar items are aligned properly */
+.navbar__items {
+    align-items: center;
+}
+
+/* Optional: adjust dropdown menu positioning if needed */
+.dropdown__menu {
+    top: calc(
+        100% + 0.25rem
+    ); /* Adjust dropdown position based on new navbar height */
+}

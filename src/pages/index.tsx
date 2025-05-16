@@ -93,23 +93,26 @@ export default function Hackathon(): JSX.Element {
         </section>
 
         {/* "WHERE" Section with Map/Coordinates */}
+        {/* "WHERE" Section with Map/Coordinates */}
         <section className={styles.whereSection}>
           <div className={styles.whereContent}>
             <h2 className={styles.sectionTitle}>Veranstaltungsort</h2>
             <div className={styles.whereData}>
               <div className={styles.whereCoordinates}>
                 <div className={styles.coordinate}>
-                  <span className={styles.coordLabel}>LAT:</span>
-                  <span className={styles.coordValue}>49.2354° N</span>
+                  <span className={styles.coordLabel}>ORT:</span>
+                  <span className={styles.coordValue}>East Side Fab e.V.</span>
                 </div>
                 <div className={styles.coordinate}>
-                  <span className={styles.coordLabel}>LNG:</span>
-                  <span className={styles.coordValue}>7.0085° E</span>
-                </div>
-                <div className={styles.coordinateName}>
-                  <span className={styles.coordLabel}>ORT:</span>
+                  <span className={styles.coordLabel}>ADRESSE:</span>
                   <span className={styles.coordValue}>
-                    Saarbrücken, Germany
+                    Eschberger Weg 40, 66121 Saarbrücken
+                  </span>
+                </div>
+                <div className={styles.coordinate}>
+                  <span className={styles.coordLabel}>KOORDINATEN:</span>
+                  <span className={styles.coordValue}>
+                    49.2354° N, 7.0085° E
                   </span>
                 </div>
               </div>
@@ -122,12 +125,6 @@ export default function Hackathon(): JSX.Element {
                 </div>
               </div>
             </div>
-            <p className={styles.sectionText}>
-              Ob vor Ort in Saarbrücken oder virtuell zugeschaltet – wir
-              schaffen den Raum, in dem du deine Ideen realisieren kannst. Der
-              Flair der Location bietet dabei die Verbindung zu modernen
-              Technologien und agilen Arbeitsmethoden.
-            </p>
           </div>
         </section>
 
