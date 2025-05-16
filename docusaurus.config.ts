@@ -133,13 +133,20 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/YourOrg/govtech-hackathon-site",
+              href: "https://github.com/East-Side-Fab/govtech-website",
+            },
+            {
+              label: "Impressum",
+              href: "https://eastsidefab.de/impressum/",
+            },
+            {
+              label: "Datenschutz",
+              href: "https://eastsidefab.de/datenschutz/",
             },
           ],
         },
       ],
-      // Update the copyright
-      copyright: `Copyright © ${new Date().getFullYear()} GovTech Hackathon. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} GovTech Hackathon | East Side Fab e.V.`,
     },
     prism: {
       theme: prismThemes.github,

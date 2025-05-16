@@ -159,3 +159,48 @@ h6 {
         max-height: 50px; /* Even smaller on very small devices */
     }
 }
+
+/* Footer improvements */
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--ifm-background-surface-color);
+    border-top: 1px solid var(--card-border);
+}
+
+.footer__title {
+    color: var(--ifm-color-primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer__link-item {
+    color: var(--ifm-font-color-base);
+    opacity: 0.8;
+    transition: all 0.2s ease;
+    padding: 0.5rem 0;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+.footer__link-item:hover {
+    opacity: 1;
+    color: var(--ifm-color-primary);
+    text-decoration: none;
+    transform: translateX(3px);
+}
+
+.footer__copyright {
+    color: var(--ifm-font-color-secondary);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Legal links with special styling */
+.footer__items .footer__item:last-child .footer__link-item,
+.footer__items .footer__item:nth-last-child(2) .footer__link-item {
+    color: var(--ifm-color-primary-lighter);
+    font-weight: 500;
+}
