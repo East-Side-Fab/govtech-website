@@ -38,7 +38,7 @@ export default function Hackathon(): JSX.Element {
             <span className={styles.taglineText}>Boost the Public Sector</span>
             <span className={styles.bracket}>{`}`}</span>
           </div>
-          <CountdownTimer targetDate="2025-12-31T00:00:00" />
+          <CountdownTimer targetDate="2025-10-10T00:00:00" />
 
           {/* Explanation moved under countdown timer as requested */}
           <div className={styles.heroExplanation}>
@@ -82,8 +82,8 @@ export default function Hackathon(): JSX.Element {
             </div>
             <div className={styles.terminalLine}>
               <span className={styles.output}>
-                Am [31.12.2023] geht es los: In nur 48 Stunden entwickeln wir
-                gemeinsam neue Lösungen für drängende Herausforderungen im
+                Am 10. Oktober 2025 geht es los: In nur 48 Stunden entwickeln
+                wir gemeinsam neue Lösungen für drängende Herausforderungen im
                 öffentlichen Sektor. Sei dabei, wenn Kreativität und Technologie
                 aufeinandertreffen – und hilf, die Zukunft von morgen zu
                 gestalten.
