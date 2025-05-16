@@ -4,7 +4,7 @@ import styles from "./anmelden.module.css";
 import { GlitchText } from "../components/GlitchText";
 import { ParticleBackground } from "../components/ParticleBackground";
 
-// Custom form that uses the Fermyon API
+// Registration form component
 const RegistrationForm = () => {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -20,7 +20,7 @@ const RegistrationForm = () => {
     setMessage("");
 
     if (!email || !firstName) {
-      setFormError("Please fill in the required fields");
+      setFormError("Bitte fülle alle erforderlichen Felder aus");
       return;
     }
 
@@ -55,33 +55,29 @@ const RegistrationForm = () => {
       const data = await response.json();
       setStatus("success");
       setMessage(
-        "Registration successful! You've been added to our hacker database.",
+        "Anmeldung erfolgreich! Wir haben dich in unserer Teilnehmerdatenbank registriert.",
       );
     } catch (error) {
       console.error("Registration error:", error);
       setStatus("error");
       setMessage(
-        error.message || "Registration failed. Please try again later.",
+        error.message ||
+          "Anmeldung fehlgeschlagen. Bitte versuche es später erneut.",
       );
     }
   };
 
   return (
     <div className={styles.formContainer}>
-      <div className={styles.terminalHeader}>
-        <div className={styles.terminalControls}>
-          <span className={styles.terminalCircle}></span>
-          <span className={styles.terminalCircle}></span>
-          <span className={styles.terminalCircle}></span>
-        </div>
-        <div className={styles.terminalTitle}>registration.sh</div>
+      <div className={styles.formHeader}>
+        <h3 className={styles.formTitle}>Anmeldeformular</h3>
       </div>
 
       <div className={styles.formContent}>
         {status === "sending" && (
           <div className={styles.formStatus}>
             <div className={styles.loader}></div>
-            <span>Sending registration data...</span>
+            <span>Deine Anmeldung wird verarbeitet...</span>
           </div>
         )}
 
@@ -97,14 +93,11 @@ const RegistrationForm = () => {
             <div className={styles.successAnimation}>
               <span className={styles.checkmark}>✓</span>
             </div>
-            <h3>Registration Successful</h3>
+            <h3>Anmeldung erfolgreich!</h3>
             <p>
-              You've been added to our hacker database. We'll transmit further
-              instructions soon.
+              Wir haben dich in unserer Teilnehmerdatenbank registriert und
+              werden dich über die nächsten Schritte informieren.
             </p>
-            <pre className={styles.successCode}>
-              {`curl -X POST -d '{"mail":"${email}", "first_name":"${firstName}","last_name":"${lastName}"}' "https://participants-pp4aag1w.fermyon.app/participants" --verbose`}
-            </pre>
           </div>
         )}
 
@@ -113,16 +106,15 @@ const RegistrationForm = () => {
             <div className={styles.formRow}>
               <div className={styles.inputField}>
                 <label>
-                  <span className={styles.fieldName}>FIRST_NAME</span>
+                  <span className={styles.fieldName}>Vorname</span>
                   <span className={styles.requiredMark}>*</span>
                 </label>
                 <div className={styles.inputWrapper}>
-                  <span className={styles.inputPrefix}>&gt;</span>
                   <input
                     type="text"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
-                    placeholder="John"
+                    placeholder="Max"
                     required
                   />
                 </div>
@@ -130,15 +122,14 @@ const RegistrationForm = () => {
 
               <div className={styles.inputField}>
                 <label>
-                  <span className={styles.fieldName}>LAST_NAME</span>
+                  <span className={styles.fieldName}>Nachname</span>
                 </label>
                 <div className={styles.inputWrapper}>
-                  <span className={styles.inputPrefix}>&gt;</span>
                   <input
                     type="text"
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
-                    placeholder="Doe"
+                    placeholder="Mustermann"
                   />
                 </div>
               </div>
@@ -146,16 +137,15 @@ const RegistrationForm = () => {
 
             <div className={styles.inputField}>
               <label>
-                <span className={styles.fieldName}>EMAIL</span>
+                <span className={styles.fieldName}>E-Mail</span>
                 <span className={styles.requiredMark}>*</span>
               </label>
               <div className={styles.inputWrapper}>
-                <span className={styles.inputPrefix}>&gt;</span>
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your@email.com"
+                  placeholder="deine.email@beispiel.de"
                   required
                 />
               </div>
@@ -163,15 +153,14 @@ const RegistrationForm = () => {
 
             <div className={styles.inputField}>
               <label>
-                <span className={styles.fieldName}>ORGANIZATION</span>
+                <span className={styles.fieldName}>Organisation</span>
               </label>
               <div className={styles.inputWrapper}>
-                <span className={styles.inputPrefix}>&gt;</span>
                 <input
                   type="text"
                   value={organization}
                   onChange={(e) => setOrganization(e.target.value)}
-                  placeholder="Your organization"
+                  placeholder="Deine Organisation"
                 />
               </div>
             </div>
@@ -185,13 +174,8 @@ const RegistrationForm = () => {
 
             <div className={styles.formActions}>
               <button type="submit" className={styles.submitButton}>
-                ./register.sh
+                Jetzt anmelden
               </button>
-              <div className={styles.buttonNote}>
-                <span className={styles.codeComment}>
-                  // Hit Enter to Execute
-                </span>
-              </div>
             </div>
           </form>
         ) : null}
@@ -203,44 +187,33 @@ const RegistrationForm = () => {
 export default function RegistrationPage(): React.ReactElement {
   return (
     <Layout
-      title="Register | GovTech Hackathon"
-      description="Register for the GovTech Hackathon – Boost the Public Sector"
+      title="Anmelden | GovTech Hackathon"
+      description="Melde dich für den GovTech Hackathon an und gestalte den öffentlichen Sektor mit"
     >
       <ParticleBackground />
 
       <header className={styles.header}>
         <div className={styles.gridOverlay}></div>
         <div className={styles.headerContent}>
-          <GlitchText text="Registration Portal" element="h1" />
+          <h1>Anmeldung</h1>
           <div className={styles.headerDescription}>
-            <span className={styles.bracket}>{`{`}</span>
             <span className={styles.descriptionText}>
-              Join the Public Sector Transformation
+              Sei Teil der Initiative zur Modernisierung des öffentlichen
+              Sektors
             </span>
-            <span className={styles.bracket}>{`}`}</span>
           </div>
         </div>
       </header>
 
       <main className={styles.mainContent}>
         <section className={styles.registrationSection}>
-          <div className={styles.sectionIntro}>
-            <h2 className={styles.sectionTitle}>
-              <span className={styles.codeFunction}>function</span>{" "}
-              joinHackathon() {`{`}
-            </h2>
-            <p className={styles.sectionText}>
-              Register for the GovTech Hackathon and become part of our hacker
-              community. We'll notify you about upcoming events, challenges, and
-              important information.
-            </p>
-          </div>
+          <p className={styles.sectionText}>
+            Melde dich für den GovTech Hackathon an und werde Teil unserer
+            Community. Wir informieren dich über kommende Veranstaltungen,
+            Challenges und wichtige Updates.
+          </p>
 
           <RegistrationForm />
-
-          <div className={styles.sectionOutro}>
-            <h2 className={styles.sectionTitle}>{`}`}</h2>
-          </div>
         </section>
       </main>
     </Layout>
