@@ -103,22 +103,22 @@ const config: Config = {
           title: "Resources",
           items: [
             {
-              label: "Documentation",
+              label: "Information",
               to: "/docs/intro",
             },
             {
-              label: "Blog",
-              to: "/blog",
+              label: "Events",
+              to: "/events",
+            },
+            {
+              label: "Anmelden",
+              to: "/anmelden",
             },
           ],
         },
         {
           title: "Community",
           items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
             {
               label: "Discord",
               href: "https://discordapp.com/invite/docusaurus",
@@ -133,8 +133,8 @@ const config: Config = {
           title: "More",
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/East-Side-Fab/govtech-website",
+              label: "East Side Fab e.V.",
+              href: "https://eastsidefab.de",
             },
             {
               label: "Impressum",
