@@ -782,3 +782,324 @@
         font-size: 1rem;
     }
 }
+
+.coordinateColumn {
+    margin-bottom: 1.5rem;
+    font-family: var(--ifm-font-family-base);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.coordLabel {
+    color: var(--ifm-color-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.coordValue {
+    color: var(--ifm-font-color-base);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.mapsLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: rgba(34, 211, 238, 0.1);
+    border: 1px solid var(--ifm-color-primary);
+    border-radius: 6px;
+    color: var(--ifm-color-primary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.mapsLink:hover {
+    background-color: rgba(34, 211, 238, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.mapsIcon {
+    font-size: 1.2rem;
+}
+
+.coordinateColumn {
+    margin-bottom: 1.5rem;
+    font-family: var(--ifm-font-family-monospace);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.coordLabel {
+    color: var(--code-keyword);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.coordValue {
+    color: var(--ifm-font-color-base);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.stringValue {
+    color: var(--code-string);
+}
+
+.numberValue {
+    color: var(--code-variable);
+}
+
+.commandLine {
+    margin-top: 1rem;
+}
+
+.commentValue {
+    color: var(--code-comment);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: var(--ifm-font-family-monospace);
+    font-size: 0.9rem;
+}
+
+.commandBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--terminal-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    color: var(--terminal-command);
+    font-family: var(--ifm-font-family-monospace);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.commandBtn:hover {
+    background-color: rgba(34, 211, 238, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    border-color: var(--card-hover-border);
+}
+
+.commandParam {
+    color: var(--code-function);
+}
+
+.promptSymbol {
+    color: var(--terminal-prompt);
+    margin-right: 0.25rem;
+}
+
+.codePunctuation {
+    color: var(--ifm-font-color-base);
+    margin: 0 0.25rem;
+}
+
+.nerdMapContainer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--card-border);
+    border-top: none;
+}
+
+.openStreetMap {
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: 0.8;
+    filter: grayscale(0.3) contrast(1.2) brightness(0.8);
+}
+
+.coordinateColumn {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.coordLabel {
+    color: var(--ifm-color-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.coordValue {
+    color: var(--ifm-font-color-base);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.mapsLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: rgba(34, 211, 238, 0.1);
+    border: 1px solid var(--btn-primary-border);
+    border-radius: 6px;
+    color: var(--ifm-color-primary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.mapsLink:hover {
+    background-color: rgba(34, 211, 238, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.mapsIcon {
+    font-size: 1.2rem;
+}
+
+.mapContainer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--card-border);
+}
+
+.openStreetMap {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: saturate(0.8) contrast(1.1);
+}
+
+.mapGrid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.mapPulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--ifm-color-primary);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    box-shadow: 0 0 15px var(--glow-primary);
+    animation: pulse 2s infinite;
+    pointer-events: none;
+}
+
+.mapOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at center,
+        transparent 50%,
+        rgba(12, 15, 22, 0.4) 100%
+    );
+    z-index: 5;
+    pointer-events: none;
+}
+
+.mapVenueLabel {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 8px 16px;
+    border-radius: 6px;
+    z-index: 30;
+    pointer-events: none;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapVenueName {
+    color: var(--ifm-color-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mapLinkOverlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 30;
+    border: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+.mapLinkOverlay:hover {
+    background-color: rgba(34, 211, 238, 0.8);
+    color: var(--ifm-background-color);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.mapLinkText {
+    font-weight: 500;
+}
+
+/* Mobile responsiveness for map elements */
+@media (max-width: 768px) {
+    .mapVenueName {
+        font-size: 0.9rem;
+    }
+
+    .mapVenueLabel {
+        padding: 6px 12px;
+    }
+}

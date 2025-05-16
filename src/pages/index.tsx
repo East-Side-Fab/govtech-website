@@ -93,35 +93,72 @@ export default function Hackathon(): JSX.Element {
         </section>
 
         {/* "WHERE" Section with Map/Coordinates */}
-        {/* "WHERE" Section with Map/Coordinates */}
         <section className={styles.whereSection}>
           <div className={styles.whereContent}>
             <h2 className={styles.sectionTitle}>Veranstaltungsort</h2>
             <div className={styles.whereData}>
               <div className={styles.whereCoordinates}>
-                <div className={styles.coordinate}>
-                  <span className={styles.coordLabel}>ORT:</span>
-                  <span className={styles.coordValue}>East Side Fab e.V.</span>
+                <div className={styles.coordinateColumn}>
+                  <div className={styles.coordLabel}>LOCATION</div>
+                  <div className={styles.coordValue}>East Side Fab e.V.</div>
                 </div>
-                <div className={styles.coordinate}>
-                  <span className={styles.coordLabel}>ADRESSE:</span>
-                  <span className={styles.coordValue}>
-                    Eschberger Weg 40, 66121 Saarbrücken
-                  </span>
+                <div className={styles.coordinateColumn}>
+                  <div className={styles.coordLabel}>ADRESSE</div>
+                  <div className={styles.coordValue}>
+                    Eschberger Weg 40
+                    <br />
+                    66121 Saarbrücken
+                  </div>
                 </div>
-                <div className={styles.coordinate}>
-                  <span className={styles.coordLabel}>KOORDINATEN:</span>
-                  <span className={styles.coordValue}>
-                    49.2354° N, 7.0085° E
-                  </span>
+                <div className={styles.coordinateColumn}>
+                  <div className={styles.coordLabel}>KOORDINATEN</div>
+                  <div className={styles.coordValue}>49.2354° N, 7.0085° E</div>
+                </div>
+                <div className={styles.coordinateColumn}>
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=East+Side+Fab+Eschberger+Weg+40+66121+Saarbrücken"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.mapsLink}
+                  >
+                    <span className={styles.mapsIcon}>📍</span> Mit Google Maps
+                    navigieren
+                  </a>
                 </div>
               </div>
 
               <div className={styles.whereMap}>
-                <div className={styles.mapPlaceholder}>
-                  {/* We'd use a real map API here in production */}
+                <div className={styles.mapContainer}>
                   <div className={styles.mapGrid}></div>
-                  <div className={styles.mapPin}></div>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=7.02902913093567%2C49.227831153236366%2C7.033041715621949%2C49.22910631917016&amp;layer=mapnik"
+                  ></iframe>
+                  <br />
+                  <small>
+                    <a href="https://www.openstreetmap.org/node/7473709615">
+                      Größere Karte anzeigen
+                    </a>
+                  </small>
+                  <div className={styles.mapPulse}></div>
+                  <div className={styles.mapOverlay}></div>
+
+                  {/* Venue Name Label */}
+                  <div className={styles.mapVenueLabel}>
+                    <span className={styles.mapVenueName}>
+                      East Side Fab e.V.
+                    </span>
+                  </div>
+
+                  <a
+                    href="https://www.openstreetmap.org/node/7473709615"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.mapLinkOverlay}
+                  >
+                    <span className={styles.mapLinkText}>Karte vergrößern</span>
+                  </a>
                 </div>
               </div>
             </div>
