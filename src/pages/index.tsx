@@ -5,6 +5,7 @@ import styles from "./index.module.css";
 import { GlitchText } from "../components/GlitchText";
 import { ParticleBackground } from "../components/ParticleBackground";
 import { CountdownTimer } from "../components/CountdownTimer";
+import TopicCarousel from "../components/TopicCarousel"; // Added import
 
 export default function Hackathon(): JSX.Element {
   // Typing effect for terminal section
@@ -165,44 +166,11 @@ export default function Hackathon(): JSX.Element {
           </div>
         </section>
 
-        {/* Challenges Section as Cards */}
+        {/* Challenges Section - NOW WITH CAROUSEL */}
         <section className={styles.challengesSection}>
           <h2 className={styles.sectionTitle}>Herausforderungen</h2>
-
-          <div className={styles.challengeCards}>
-            <div className={styles.challengeCard}>
-              <div className={styles.cardIcon}>🔒</div>
-              <h3>Cybersecurity</h3>
-              <p>
-                Entwickle Lösungen zum Schutz von Regierungsdaten und der
-                Privatsphäre der Bürger
-              </p>
-            </div>
-            <div className={styles.challengeCard}>
-              <div className={styles.cardIcon}>📱</div>
-              <h3>Digital Services</h3>
-              <p>
-                Erstelle intuitive Schnittstellen für Anwendungen des
-                öffentlichen Sektors
-              </p>
-            </div>
-            <div className={styles.challengeCard}>
-              <div className={styles.cardIcon}>🌍</div>
-              <h3>Sustainability</h3>
-              <p>
-                Nutze Technologie, um Regierungen bei der Erreichung von
-                Klimazielen zu unterstützen
-              </p>
-            </div>
-            <div className={styles.challengeCard}>
-              <div className={styles.cardIcon}>📊</div>
-              <h3>Open Data</h3>
-              <p>
-                Entwickle Tools, die Regierungsdaten zugänglich und nützlich
-                machen
-              </p>
-            </div>
-          </div>
+          {/* Old static cards removed, TopicCarousel added below */}
+          <TopicCarousel />
         </section>
 
         {/* CTA Section */}
