@@ -166,7 +166,7 @@ const TopicCarousel = () => {
             className={styles.prevButton}
             onClick={goToPrev}
             aria-label="Previous topic"
-            // Consider adding aria-controls pointing to the ID of topicDisplay if it had one
+            aria-controls="topic-display"
           >
             &lt;
           </button>
