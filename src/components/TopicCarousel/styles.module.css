@@ -1,0 +1,143 @@
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* For positioning arrows */
+  width: 100%;
+  max-width: 800px; /* Or your preferred max-width */
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #282c34; /* Dark background */
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Ensures nothing spills out during transitions */
+}
+
+.topicDisplay {
+  text-align: center;
+  min-height: 150px; /* Adjust as needed to prevent layout shifts */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 40px; /* Space for arrows */
+}
+
+.topicDisplay h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: #61dafb; /* Accent color for title */
+}
+
+.topicDisplay p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* Basic styling for navigation arrows */
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.prevButton {
+  left: 15px;
+}
+
+.nextButton {
+  right: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carouselContainer {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .topicDisplay h2 {
+    font-size: 2rem;
+  }
+
+  .topicDisplay p {
+    font-size: 1rem;
+  }
+
+  .prevButton,
+  .nextButton {
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .prevButton {
+    left: 10px;
+  }
+
+  .nextButton {
+    right: 10px;
+  }
+   .topicDisplay {
+    padding: 0 30px; /* Smaller padding for arrows on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .topicDisplay h2 {
+    font-size: 1.6rem;
+  }
+
+  .topicDisplay p {
+    font-size: 0.9rem;
+  }
+   .prevButton,
+  .nextButton {
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    /* Ensure buttons don't overlap content too much */
+    background-color: rgba(0, 0, 0, 0.3); /* Darker background for visibility */
+  }
+}
+
+/* Styles for transitions (will be used with JS to add/remove classes) */
+.topicEnter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.topicEnterActive {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.topicExit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.topicExitActive {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
