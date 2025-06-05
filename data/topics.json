@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "AI for Environmental Sustainability",
+    "description": "Develop AI solutions to address pressing environmental challenges like climate change, conservation, and resource management.",
+    "link": "/challenges/ai-sustainability"
+  },
+  {
+    "id": "2",
+    "title": "Future of Urban Mobility",
+    "description": "Reimagine transportation in cities with innovative ideas for smart traffic systems, public transit, and last-mile solutions.",
+    "link": "/challenges/urban-mobility"
+  },
+  {
+    "id": "3",
+    "title": "Healthcare Access & Affordability",
+    "description": "Create technology to improve healthcare outcomes, reduce costs, and make medical services more accessible to all.",
+    "link": "/challenges/healthcare-access"
+  },
+  {
+    "id": "4",
+    "title": "Gamified Learning Experiences",
+    "description": "Design interactive and engaging educational games that make learning fun and effective for various age groups.",
+    "link": "/challenges/gamified-learning"
+  }
+]
