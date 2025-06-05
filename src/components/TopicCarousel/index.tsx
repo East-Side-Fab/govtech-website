@@ -20,7 +20,7 @@ const TopicCarousel = () => {
   const autoRotateDelay = 4500;
 
   useEffect(() => {
-    fetch('/data/topics.json')
+    fetch('data/topics.json')
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
