@@ -180,10 +180,7 @@ const TopicCarousel = () => {
           </button>
         </>
       )}
-      {/* Placeholder for touch/swipe instructions or future implementation: */}
-      {/* <p style={{fontSize: '0.8rem', textAlign: 'center', marginTop: '1rem', opacity: 0.7}}>
-        On touch devices, please use the navigation arrows. Swipe functionality coming soon.
-      </p> */}
+      {/* TODO: Add swipe functionality for touch devices in the future. */}
     </div>
   );
 };
