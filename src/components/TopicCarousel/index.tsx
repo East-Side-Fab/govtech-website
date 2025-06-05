@@ -120,8 +120,7 @@ const TopicCarousel = () => {
   if (!currentTopic && topics.length > 0) {
     // This case might happen if currentIndex is out of sync briefly
     // or topics array got emptied unexpectedly.
-    // Defaulting to first topic or showing an error/empty state.
-    if (topics.length > 0) setCurrentIndex(0); // Attempt to recover
+    // Showing an error/empty state while recovery logic runs in useEffect.
     return <div className={styles.carouselContainer}><p>No topic to display.</p></div>;
   }
 
