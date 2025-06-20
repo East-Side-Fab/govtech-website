@@ -19,7 +19,7 @@ const config: Config = {
   ],
 
   // The production URL of your site
-  url: "https://govtech-hackathon.example.com",
+  url: "https://hackathon.govtech.saarland",
   // The /<baseUrl>/ pathname under which your site is served
   baseUrl: "/",
 
