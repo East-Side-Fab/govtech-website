@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>GovTech Hackathon Blog</title>
-        <link>https://govtech-hackathon.example.com/blog</link>
+        <link>https://hackathon.govtech.saarland/blog</link>
         <description>GovTech Hackathon Blog</description>
         <lastBuildDate>Sat, 22 Feb 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Willkommen zum GovTech Hackathon!]]></title>
-            <link>https://govtech-hackathon.example.com/blog/2025/02/22/willkommen-zum-govtech-hackathon</link>
-            <guid>https://govtech-hackathon.example.com/blog/2025/02/22/willkommen-zum-govtech-hackathon</guid>
+            <link>https://hackathon.govtech.saarland/blog/2025/02/22/willkommen-zum-govtech-hackathon</link>
+            <guid>https://hackathon.govtech.saarland/blog/2025/02/22/willkommen-zum-govtech-hackathon</guid>
             <pubDate>Sat, 22 Feb 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Herzlich willkommen zu unserem allerersten Blog-Beitrag rund um den GovTech Hackathon!]]></description>
             <content:encoded><![CDATA[<p>Herzlich willkommen zu unserem allerersten Blog-Beitrag rund um den <strong>GovTech Hackathon</strong>!</p>
