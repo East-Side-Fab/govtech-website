@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://govtech-hackathon.example.com/govtech-website/blog</id>
+    <id>https://govtech-hackathon.example.com/blog</id>
     <title>GovTech Hackathon Blog</title>
     <updated>2025-02-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://govtech-hackathon.example.com/govtech-website/blog"/>
+    <link rel="alternate" href="https://govtech-hackathon.example.com/blog"/>
     <subtitle>GovTech Hackathon Blog</subtitle>
-    <icon>https://govtech-hackathon.example.com/govtech-website/img/favicon.ico</icon>
+    <icon>https://govtech-hackathon.example.com/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Willkommen zum GovTech Hackathon!]]></title>
-        <id>https://govtech-hackathon.example.com/govtech-website/blog/2025/02/22/willkommen-zum-govtech-hackathon</id>
-        <link href="https://govtech-hackathon.example.com/govtech-website/blog/2025/02/22/willkommen-zum-govtech-hackathon"/>
+        <id>https://govtech-hackathon.example.com/blog/2025/02/22/willkommen-zum-govtech-hackathon</id>
+        <link href="https://govtech-hackathon.example.com/blog/2025/02/22/willkommen-zum-govtech-hackathon"/>
         <updated>2025-02-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Herzlich willkommen zu unserem allerersten Blog-Beitrag rund um den GovTech Hackathon!]]></summary>
         <content type="html"><![CDATA[<p>Herzlich willkommen zu unserem allerersten Blog-Beitrag rund um den <strong>GovTech Hackathon</strong>!</p>
