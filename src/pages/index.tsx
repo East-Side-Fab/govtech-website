@@ -39,16 +39,22 @@ export default function Hackathon(): JSX.Element {
             <span className={styles.taglineText}>Boost the Public Sector</span>
             <span className={styles.bracket}>{`}`}</span>
           </div>
+          <div className={styles.heroSubtitle}>
+            <h2>Der Hackathon am 10. & 11. Oktober 2025 im Saarland</h2>
+          </div>
           <CountdownTimer targetDate="2025-10-10T00:00:00" />
 
           {/* Explanation moved under countdown timer as requested */}
           <div className={styles.heroExplanation}>
             <p className={styles.explanationText}>
-              Ein Hackathon ist ein intensiver Kreativ- und Programmiermarathon,
-              bei dem Menschen aus unterschiedlichen Fachrichtungen innerhalb
-              weniger Stunden oder Tage zusammenarbeiten, um neue Lösungen zu
-              entwickeln. Unser GovTech Hackathon legt dabei den Schwerpunkt auf
-              den öffentlichen Sektor.
+              Im Herzen Europas, wo Deutschland, Frankreich und Luxemburg 
+              aufeinandertreffen, gestalten wir die Zukunft des öffentlichen 
+              Sektors. Das Saarland als innovativer Technologiestandort und 
+              Brücke zwischen den Kulturen bietet den perfekten Rahmen für 
+              unseren GovTech Hackathon – ein intensiver Kreativ- und 
+              Programmiermarathon, bei dem visionäre Köpfe aus verschiedenen 
+              Disziplinen in nur 48 Stunden bahnbrechende Lösungen für die 
+              digitale Verwaltung von morgen entwickeln.
             </p>
           </div>
 
@@ -185,6 +191,45 @@ export default function Hackathon(): JSX.Element {
             <a href="anmelden" className={styles.ctaButton}>
               Jetzt registrieren
             </a>
+          </div>
+        </section>
+
+        {/* Organizers Section */}
+        <section className={styles.organizersSection}>
+          <h2 className={styles.sectionTitle}>Organisiert von</h2>
+          <div className={styles.organizersLogos}>
+            <div className={styles.organizerItem}>
+              <a 
+                href="https://eastsidefab.de" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.organizerLink}
+              >
+                <img 
+                  src="img/logos/east-side-fab_-300x147.png" 
+                  alt="East Side Fab e.V." 
+                  className={styles.organizerLogo}
+                />
+                <h3>East Side Fab e.V.</h3>
+                <p>Veranstalter</p>
+              </a>
+            </div>
+            <div className={styles.organizerItem}>
+              <a 
+                href="https://www.saarland.de/mwide/DE/home" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.organizerLink}
+              >
+                <img 
+                  src="img/logos/MWIDE-768x384.jpg" 
+                  alt="Ministerium für Wirtschaft, Innovation, Digitales und Energie des Saarlandes" 
+                  className={styles.organizerLogo}
+                />
+                <h3>MWIDE Saarland</h3>
+                <p>Unterstützende Organisation</p>
+              </a>
+            </div>
           </div>
         </section>
       </main>
