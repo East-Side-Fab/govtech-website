@@ -32,8 +32,7 @@ const RegistrationForm = () => {
         mail: email,
         first_name: firstName,
         last_name: lastName || "",
-        // Include organization if needed in your API
-        // organization: organization
+        organization: organization || ""
       };
 
       // Send data to the Fermyon API
