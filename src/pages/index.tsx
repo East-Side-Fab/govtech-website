@@ -40,20 +40,20 @@ export default function Hackathon(): JSX.Element {
             <span className={styles.bracket}>{`}`}</span>
           </div>
           <div className={styles.heroSubtitle}>
-            <h2>Der Hackathon am 10. & 11. Oktober 2025 im Saarland</h2>
+            <h2>Der Hackathon am 11. & 12. Oktober 2025 im Saarland</h2>
           </div>
-          <CountdownTimer targetDate="2025-10-10T00:00:00" />
+          <CountdownTimer targetDate="2025-10-11T00:00:00" />
 
           {/* Explanation moved under countdown timer as requested */}
           <div className={styles.heroExplanation}>
             <p className={styles.explanationText}>
-              Im Herzen Europas, wo Deutschland, Frankreich und Luxemburg 
-              aufeinandertreffen, gestalten wir die Zukunft des öffentlichen 
-              Sektors. Das Saarland als innovativer Technologiestandort und 
-              Brücke zwischen den Kulturen bietet den perfekten Rahmen für 
-              unseren GovTech Hackathon – ein intensiver Kreativ- und 
-              Programmiermarathon, bei dem visionäre Köpfe aus verschiedenen 
-              Disziplinen in nur 48 Stunden bahnbrechende Lösungen für die 
+              Im Herzen Europas, wo Deutschland, Frankreich und Luxemburg
+              aufeinandertreffen, gestalten wir die Zukunft des öffentlichen
+              Sektors. Das Saarland als innovativer Technologiestandort und
+              Brücke zwischen den Kulturen bietet den perfekten Rahmen für
+              unseren GovTech Hackathon – ein intensiver Kreativ- und
+              Programmiermarathon, bei dem visionäre Köpfe aus verschiedenen
+              Disziplinen in nur 48 Stunden bahnbrechende Lösungen für die
               digitale Verwaltung von morgen entwickeln.
             </p>
           </div>
@@ -199,15 +199,15 @@ export default function Hackathon(): JSX.Element {
           <h2 className={styles.sectionTitle}>Organisiert von</h2>
           <div className={styles.organizersLogos}>
             <div className={styles.organizerItem}>
-              <a 
-                href="https://eastsidefab.de" 
-                target="_blank" 
+              <a
+                href="https://eastsidefab.de"
+                target="_blank"
                 rel="noopener noreferrer"
                 className={styles.organizerLink}
               >
-                <img 
-                  src="img/logos/east-side-fab_-300x147.png" 
-                  alt="East Side Fab e.V." 
+                <img
+                  src="img/logos/east-side-fab_-300x147.png"
+                  alt="East Side Fab e.V."
                   className={styles.organizerLogo}
                 />
                 <h3>East Side Fab e.V.</h3>
@@ -215,15 +215,15 @@ export default function Hackathon(): JSX.Element {
               </a>
             </div>
             <div className={styles.organizerItem}>
-              <a 
-                href="https://www.saarland.de/mwide/DE/home" 
-                target="_blank" 
+              <a
+                href="https://www.saarland.de/mwide/DE/home"
+                target="_blank"
                 rel="noopener noreferrer"
                 className={styles.organizerLink}
               >
-                <img 
-                  src="img/logos/MWIDE-768x384.jpg" 
-                  alt="Ministerium für Wirtschaft, Innovation, Digitales und Energie des Saarlandes" 
+                <img
+                  src="img/logos/MWIDE-768x384.jpg"
+                  alt="Ministerium für Wirtschaft, Innovation, Digitales und Energie des Saarlandes"
                   className={styles.organizerLogo}
                 />
                 <h3>MWIDE Saarland</h3>
