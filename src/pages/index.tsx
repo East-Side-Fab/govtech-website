@@ -89,7 +89,7 @@ export default function Hackathon(): JSX.Element {
             </div>
             <div className={styles.terminalLine}>
               <span className={styles.output}>
-                Am 10. Oktober 2025 geht es los: In nur 48 Stunden entwickeln
+                Am 11. Oktober 2025 geht es los: In nur 48 Stunden entwickeln
                 wir gemeinsam neue Lösungen für drängende Herausforderungen im
                 öffentlichen Sektor. Sei dabei, wenn Kreativität und Technologie
                 aufeinandertreffen – und hilf, die Zukunft von morgen zu

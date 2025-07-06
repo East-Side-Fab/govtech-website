@@ -20,7 +20,7 @@ const EVENTS: EventItem[] = [
   {
     id: 1,
     title: "GovTech Info Session",
-    date: "10.11.2023",
+    date: "10.11.2025",
     time: "19:00 - 21:00",
     location: "East Side Fab e.V., Eschberger Weg 40, Saarbrücken",
     description:
@@ -31,7 +31,7 @@ const EVENTS: EventItem[] = [
   {
     id: 2,
     title: "Open Data Workshop",
-    date: "25.11.2023",
+    date: "25.11.2025",
     time: "10:00 - 16:00",
     location: "East Side Fab e.V., Eschberger Weg 40, Saarbrücken",
     description:
@@ -42,7 +42,7 @@ const EVENTS: EventItem[] = [
   {
     id: 3,
     title: "GovTech Meetup: Digitales Bürgerzentrum",
-    date: "05.12.2023",
+    date: "05.12.2025",
     time: "18:30 - 20:30",
     location: "Online (Zoom)",
     description:
@@ -53,7 +53,7 @@ const EVENTS: EventItem[] = [
   {
     id: 4,
     title: "API-Workshop: Schnittstellen im öffentlichen Sektor",
-    date: "15.12.2023",
+    date: "15.12.2025",
     time: "14:00 - 17:00",
     location: "East Side Fab e.V., Eschberger Weg 40, Saarbrücken",
     description:
@@ -148,7 +148,7 @@ export default function EventsPage(): JSX.Element {
                 <div className={styles.finalEventDot}></div>
                 <div className={styles.finalEventCard}>
                   <h3>Hackathon</h3>
-                  <div className={styles.finalEventDate}>31.12.2023</div>
+                  <div className={styles.finalEventDate}>11. & 12. Oktober 2025</div>
                 </div>
               </div>
             </div>
