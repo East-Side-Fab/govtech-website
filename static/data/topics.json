@@ -1,26 +1,26 @@
 [
   {
     "id": "1",
-    "title": "AI for Environmental Sustainability",
-    "description": "Develop AI solutions to address pressing environmental challenges like climate change, conservation, and resource management.",
-    "link": "/challenges/ai-sustainability"
+    "title": "Digitale Bürgerdienste",
+    "description": "Entwickle intuitive digitale Lösungen für Bürgerdienste wie Anträge, Terminbuchungen und Behördengänge. Mache den Kontakt mit der Verwaltung einfacher und benutzerfreundlicher.",
+    "link": "/docs/faq"
   },
   {
     "id": "2",
-    "title": "Future of Urban Mobility",
-    "description": "Reimagine transportation in cities with innovative ideas for smart traffic systems, public transit, and last-mile solutions.",
-    "link": "/challenges/urban-mobility"
+    "title": "Open Data & Transparenz",
+    "description": "Nutze offene Verwaltungsdaten für innovative Anwendungen. Schaffe Transparenz und ermögliche Bürgern besseren Zugang zu öffentlichen Informationen.",
+    "link": "/docs/faq"
   },
   {
     "id": "3",
-    "title": "Healthcare Access & Affordability",
-    "description": "Create technology to improve healthcare outcomes, reduce costs, and make medical services more accessible to all.",
-    "link": "/challenges/healthcare-access"
+    "title": "Smart City Lösungen",
+    "description": "Entwickle intelligente Stadtlösungen für Verkehr, Umwelt und Infrastruktur. Verbessere die Lebensqualität in Städten durch innovative Technologien.",
+    "link": "/docs/faq"
   },
   {
     "id": "4",
-    "title": "Gamified Learning Experiences",
-    "description": "Design interactive and engaging educational games that make learning fun and effective for various age groups.",
-    "link": "/challenges/gamified-learning"
+    "title": "Verwaltungsprozesse optimieren",
+    "description": "Digitalisiere und automatisiere interne Verwaltungsprozesse. Reduziere Bürokratie und erhöhe die Effizienz in öffentlichen Einrichtungen.",
+    "link": "/docs/faq"
   }
 ]
