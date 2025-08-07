@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
 import styles from "./anmelden.module.css";
 import { GlitchText } from "../components/GlitchText";
 import { ParticleBackground } from "../components/ParticleBackground";
@@ -10,6 +11,8 @@ const RegistrationForm = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [organization, setOrganization] = useState("");
+  const [eventUpdates, setEventUpdates] = useState(false);
+  const [newsletter, setNewsletter] = useState(false);
   const [formError, setFormError] = useState("");
   const [status, setStatus] = useState("idle"); // idle, sending, success, error
   const [message, setMessage] = useState("");
@@ -32,7 +35,9 @@ const RegistrationForm = () => {
         mail: email,
         first_name: firstName,
         last_name: lastName || "",
-        organisation: organization || ""
+        organisation: organization || "",
+        event_updates: eventUpdates,
+        newsletter: newsletter
       };
 
       // Send data to the Fermyon API
@@ -161,6 +166,44 @@ const RegistrationForm = () => {
                   onChange={(e) => setOrganization(e.target.value)}
                   placeholder="Deine Organisation"
                 />
+              </div>
+            </div>
+
+            <div className={styles.checkboxGroup}>
+              <div className={styles.checkboxField}>
+                <label className={styles.checkboxLabel}>
+                  <input
+                    type="checkbox"
+                    checked={eventUpdates}
+                    onChange={(e) => setEventUpdates(e.target.checked)}
+                    className={styles.checkbox}
+                  />
+                  <span className={styles.checkboxText}>
+                    Ja, ich möchte nach dem Event Informationen zu ähnlichen
+                    Veranstaltungen erhalten und an der Feedback-Umfrage
+                    teilnehmen. (Widerruf jederzeit möglich)
+                  </span>
+                </label>
+              </div>
+
+              <div className={styles.checkboxField}>
+                <label className={styles.checkboxLabel}>
+                  <input
+                    type="checkbox"
+                    checked={newsletter}
+                    onChange={(e) => setNewsletter(e.target.checked)}
+                    className={styles.checkbox}
+                  />
+                  <span className={styles.checkboxText}>
+                    Ja, ich abonniere den Newsletter des East Side Fabs um über
+                    weitere spannende Events und Informationen zu erhalten.
+                    Hinweise zum{" "}
+                    <Link to="/datenschutz" className={styles.privacyLink}>
+                      Datenschutz
+                    </Link>{" "}
+                    und Widerruf habe ich gelesen.
+                  </span>
+                </label>
               </div>
             </div>
 
