@@ -194,41 +194,58 @@ export default function Hackathon(): JSX.Element {
           </div>
         </section>
 
-        {/* Organizers Section */}
-        <section className={styles.organizersSection}>
-          <h2 className={styles.sectionTitle}>Organisiert von</h2>
-          <div className={styles.organizersLogos}>
-            <div className={styles.organizerItem}>
-              <a
-                href="https://eastsidefab.de"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.organizerLink}
-              >
-                <img
-                  src="img/logos/east-side-fab_-300x147.png"
-                  alt="East Side Fab e.V."
-                  className={styles.organizerLogo}
-                />
-                <h3>East Side Fab e.V.</h3>
-                <p>Veranstalter</p>
-              </a>
+        {/* Partners Section */}
+        <section className={styles.partnersSection}>
+          <h2 className={styles.sectionTitle}>Partner</h2>
+          <div className={styles.partnersLogos}>
+            <div className={styles.partnerItem}>
+              <img
+                src="img/logos/partner1.png"
+                alt="Partner 1"
+                className={styles.partnerLogo}
+              />
             </div>
-            <div className={styles.organizerItem}>
-              <a
-                href="https://www.saarland.de/mwide/DE/home"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.organizerLink}
-              >
-                <img
-                  src="img/logos/MWIDE-768x384.jpg"
-                  alt="Ministerium für Wirtschaft, Innovation, Digitales und Energie des Saarlandes"
-                  className={styles.organizerLogo}
-                />
-                <h3>MWIDE Saarland</h3>
-                <p>Unterstützende Organisation</p>
-              </a>
+            <div className={styles.partnerItem}>
+              <img
+                src="img/logos/partner2.png"
+                alt="Partner 2"
+                className={styles.partnerLogo}
+              />
+            </div>
+            <div className={styles.partnerItem}>
+              <img
+                src="img/logos/partner3.png"
+                alt="Partner 3"
+                className={styles.partnerLogo}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Sponsors Section */}
+        <section className={styles.sponsorsSection}>
+          <h2 className={styles.sectionTitle}>Gefördert durch</h2>
+          <div className={styles.sponsorsLogos}>
+            <div className={styles.sponsorItem}>
+              <img
+                src="img/logos/sponsor1.png"
+                alt="Sponsor 1"
+                className={styles.sponsorLogo}
+              />
+            </div>
+            <div className={styles.sponsorItem}>
+              <img
+                src="img/logos/sponsor2.png"
+                alt="Sponsor 2"
+                className={styles.sponsorLogo}
+              />
+            </div>
+            <div className={styles.sponsorItem}>
+              <img
+                src="img/logos/sponsor3.png"
+                alt="Sponsor 3"
+                className={styles.sponsorLogo}
+              />
             </div>
           </div>
         </section>
