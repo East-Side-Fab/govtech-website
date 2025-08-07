@@ -252,6 +252,96 @@
     text-decoration: none;
 }
 
+/* Coming Soon Section */
+.comingSoonSection {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3rem 0;
+    align-items: center;
+}
+
+.comingSoonCard {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.05) 0%, rgba(34, 238, 139, 0.05) 100%);
+    border: 1px solid rgba(34, 211, 238, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.comingSoonTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #22ee8b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.comingSoonText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--ifm-font-color-secondary);
+}
+
+.hackathonDateCard {
+    text-align: center;
+    padding: 2.5rem 3rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.1) 0%, rgba(34, 238, 139, 0.1) 100%);
+    border: 2px solid var(--ifm-color-primary);
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hackathonDateCard::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    to { transform: rotate(360deg); }
+}
+
+.saveTheDate {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--ifm-color-primary);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.hackathonTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--ifm-heading-color);
+}
+
+.hackathonDate {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ifm-color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.hackathonLocation {
+    font-size: 1rem;
+    color: var(--ifm-font-color-secondary);
+}
+
 /* Final event - Hackathon */
 .timelineFinalEvent {
     position: relative;
