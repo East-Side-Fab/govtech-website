@@ -140,7 +140,7 @@ const config: Config = {
             },
             {
               label: "Datenschutz",
-              href: "https://eastsidefab.de/datenschutz/",
+              to: "/datenschutz",
             },
           ],
         },

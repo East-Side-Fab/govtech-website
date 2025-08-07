@@ -269,6 +269,50 @@
     font-size: 0.875rem;
 }
 
+/* Checkbox styles */
+.checkboxGroup {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(34, 211, 238, 0.1);
+}
+
+.checkboxField {
+    margin-bottom: 1.5rem;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    cursor: pointer;
+    accent-color: var(--ifm-color-primary);
+}
+
+.checkboxText {
+    color: var(--ifm-color-emphasis-800);
+    flex: 1;
+}
+
+.privacyLink {
+    color: var(--ifm-color-primary);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.privacyLink:hover {
+    color: var(--terminal-command);
+}
+
 /* Status messages */
 .formStatus,
 .formError,
