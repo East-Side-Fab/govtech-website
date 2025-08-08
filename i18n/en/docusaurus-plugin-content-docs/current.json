@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Ablauf": {
+    "message": "Ablauf",
+    "description": "The label for category Ablauf in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.doc.GovTech Hackathon": {
+    "message": "GovTech Hackathon",
+    "description": "The label for the doc item GovTech Hackathon in sidebar tutorialSidebar, linking to the doc intro"
+  },
+  "sidebar.tutorialSidebar.doc.Anfahrt": {
+    "message": "Anfahrt",
+    "description": "The label for the doc item Anfahrt in sidebar tutorialSidebar, linking to the doc location/directions"
+  },
+  "sidebar.tutorialSidebar.doc.Guidelines": {
+    "message": "Guidelines",
+    "description": "The label for the doc item Guidelines in sidebar tutorialSidebar, linking to the doc guidelines/code-of-conduct"
+  },
+  "sidebar.tutorialSidebar.doc.FAQ": {
+    "message": "FAQ",
+    "description": "The label for the doc item FAQ in sidebar tutorialSidebar, linking to the doc faq"
+  },
+  "sidebar.tutorialSidebar.doc.Sponsoren": {
+    "message": "Sponsoren",
+    "description": "The label for the doc item Sponsoren in sidebar tutorialSidebar, linking to the doc sponsors/sponsor-list"
+  }
+}
