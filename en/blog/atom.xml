@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://hackathon.govtech.saarland/en/blog</id>
+    <title>GovTech Hackathon Blog</title>
+    <updated>2025-02-22T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://hackathon.govtech.saarland/en/blog"/>
+    <subtitle>GovTech Hackathon Blog</subtitle>
+    <icon>https://hackathon.govtech.saarland/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Willkommen zum GovTech Hackathon!]]></title>
+        <id>https://hackathon.govtech.saarland/en/blog/2025/02/22/willkommen-zum-govtech-hackathon</id>
+        <link href="https://hackathon.govtech.saarland/en/blog/2025/02/22/willkommen-zum-govtech-hackathon"/>
+        <updated>2025-02-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Herzlich willkommen zu unserem allerersten Blog-Beitrag rund um den GovTech Hackathon!]]></summary>
+        <content type="html"><![CDATA[<p>Herzlich willkommen zu unserem allerersten Blog-Beitrag rund um den <strong>GovTech Hackathon</strong>!</p>
+<p>In den kommenden Wochen und Tagen möchten wir Euch alle auf dem Laufenden halten, was unseren Hackathon betrifft – von spannenden Workshops und Vorträgen bis hin zu den innovativen Ideen, die hier entstehen werden. Unser Ziel ist es, den öffentlichen Sektor durch technologische Innovation neu zu denken und nachhaltige Veränderungen zu bewirken.</p>
+<p><strong>Was erwartet Euch?</strong></p>
+<ul>
+<li><strong>Inspiration:</strong> Erfahre, wie andere erfolgreiche Hackathons ablaufen und welche Projekte in der Vergangenheit umgesetzt wurden.</li>
+<li><strong>Austausch:</strong> Lerne von Experten, knüpfe wertvolle Kontakte und teile Deine eigenen Ideen.</li>
+<li><strong>Action:</strong> Sei Teil eines dynamischen Teams, das in nur 48 Stunden kreative Lösungen für reale Herausforderungen entwickelt.</li>
+</ul>
+<p>Wir sind überzeugt, dass Innovation und Zusammenarbeit die Schlüssel zur Zukunft sind. Bleibt dran – in diesem Blog berichten wir regelmäßig über Neuigkeiten, spannende Einblicke und hilfreiche Tipps rund um das Event.</p>
+<p>Lasst uns gemeinsam den öffentlichen Sektor revolutionieren!</p>
+<p>Viel Spaß und bis bald,<br>
+<!-- -->Euer GovTech-Team</p>]]></content>
+        <author>
+            <name>Daniel Silva F.</name>
+            <uri>https://www.linkedin.com/in/daniel-silva-f-8a2618237/</uri>
+        </author>
+        <category label="Hackathon" term="Hackathon"/>
+        <category label="GovTech" term="GovTech"/>
+        <category label="Innovation" term="Innovation"/>
+    </entry>
+</feed>

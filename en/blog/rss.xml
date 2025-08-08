@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>GovTech Hackathon Blog</title>
+        <link>https://hackathon.govtech.saarland/en/blog</link>
+        <description>GovTech Hackathon Blog</description>
+        <lastBuildDate>Sat, 22 Feb 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Willkommen zum GovTech Hackathon!]]></title>
+            <link>https://hackathon.govtech.saarland/en/blog/2025/02/22/willkommen-zum-govtech-hackathon</link>
+            <guid>https://hackathon.govtech.saarland/en/blog/2025/02/22/willkommen-zum-govtech-hackathon</guid>
+            <pubDate>Sat, 22 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Herzlich willkommen zu unserem allerersten Blog-Beitrag rund um den GovTech Hackathon!]]></description>
+            <content:encoded><![CDATA[<p>Herzlich willkommen zu unserem allerersten Blog-Beitrag rund um den <strong>GovTech Hackathon</strong>!</p>
+<p>In den kommenden Wochen und Tagen möchten wir Euch alle auf dem Laufenden halten, was unseren Hackathon betrifft – von spannenden Workshops und Vorträgen bis hin zu den innovativen Ideen, die hier entstehen werden. Unser Ziel ist es, den öffentlichen Sektor durch technologische Innovation neu zu denken und nachhaltige Veränderungen zu bewirken.</p>
+<p><strong>Was erwartet Euch?</strong></p>
+<ul>
+<li><strong>Inspiration:</strong> Erfahre, wie andere erfolgreiche Hackathons ablaufen und welche Projekte in der Vergangenheit umgesetzt wurden.</li>
+<li><strong>Austausch:</strong> Lerne von Experten, knüpfe wertvolle Kontakte und teile Deine eigenen Ideen.</li>
+<li><strong>Action:</strong> Sei Teil eines dynamischen Teams, das in nur 48 Stunden kreative Lösungen für reale Herausforderungen entwickelt.</li>
+</ul>
+<p>Wir sind überzeugt, dass Innovation und Zusammenarbeit die Schlüssel zur Zukunft sind. Bleibt dran – in diesem Blog berichten wir regelmäßig über Neuigkeiten, spannende Einblicke und hilfreiche Tipps rund um das Event.</p>
+<p>Lasst uns gemeinsam den öffentlichen Sektor revolutionieren!</p>
+<p>Viel Spaß und bis bald,<br>
+<!-- -->Euer GovTech-Team</p>]]></content:encoded>
+            <category>Hackathon</category>
+            <category>GovTech</category>
+            <category>Innovation</category>
+        </item>
+    </channel>
+</rss>
