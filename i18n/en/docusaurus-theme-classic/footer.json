@@ -1,0 +1,50 @@
+{
+  "link.title.Resources": {
+    "message": "Resources",
+    "description": "The title of the footer links column with title=Resources"
+  },
+  "link.title.Community": {
+    "message": "Community", 
+    "description": "The title of the footer links column with title=Community"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More"
+  },
+  "link.item.label.Information": {
+    "message": "Information",
+    "description": "The label of footer link with label=Information linking to /docs/intro"
+  },
+  "link.item.label.Events": {
+    "message": "Events",
+    "description": "The label of footer link with label=Events linking to /events"
+  },
+  "link.item.label.Anmelden": {
+    "message": "Register",
+    "description": "The label of footer link with label=Register linking to /anmelden"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to Discord"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to Twitter"
+  },
+  "link.item.label.East Side Fab e.V.": {
+    "message": "East Side Fab e.V.",
+    "description": "The label of footer link with label=East Side Fab e.V. linking to https://eastsidefab.de"
+  },
+  "link.item.label.Impressum": {
+    "message": "Legal Notice",
+    "description": "The label of footer link with label=Legal Notice linking to https://eastsidefab.de/impressum/"
+  },
+  "link.item.label.Datenschutz": {
+    "message": "Privacy Policy",
+    "description": "The label of footer link with label=Privacy Policy linking to /datenschutz"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 GovTech Hackathon | East Side Fab e.V.",
+    "description": "The footer copyright"
+  }
+}
