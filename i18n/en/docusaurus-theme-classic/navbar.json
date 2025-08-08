@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "GovTech Hackathon",
+    "description": "The title in the navbar"
+  },
+  "item.label.Info": {
+    "message": "Info",
+    "description": "Navbar item with label Info"
+  },
+  "item.label.Events": {
+    "message": "Events",
+    "description": "Navbar item with label Events"
+  },
+  "item.label.Anmelden": {
+    "message": "Register",
+    "description": "Navbar item with label Register"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

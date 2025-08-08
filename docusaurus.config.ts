@@ -51,8 +51,8 @@ const config: Config = {
 
   // Set the default language for the site
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "de",
+    locales: ["de", "en"],
   },
 
   presets: [
@@ -105,6 +105,10 @@ const config: Config = {
         },
         { to: "/events", label: "Events", position: "left" },
         { to: "/anmelden", label: "Anmelden", position: "left" },
+        {
+          type: "localeDropdown",
+          position: "right",
+        },
         {
           href: "https://github.com/East-Side-Fab/govtech-website",
           label: "GitHub",
