@@ -13,10 +13,14 @@
   },
   "item.label.Anmelden": {
     "message": "Register",
-    "description": "Navbar item with label Register"
+    "description": "Navbar item with label Anmelden"
   },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "logo.alt": {
+    "message": "East Side Fab Logo",
+    "description": "The alt text of navbar logo"
   }
 }

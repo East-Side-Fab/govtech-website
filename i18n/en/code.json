@@ -50,5 +50,516 @@
   "theme.tags.tagsPageLink": {
     "message": "View All Tags",
     "description": "The label of the link targeting the tag list page"
+  },
+  "registration.form.error.required": {
+    "message": "Please fill in all required fields",
+    "description": "Error message when required fields are missing"
+  },
+  "registration.form.success": {
+    "message": "Registration successful! We have registered you in our participant database.",
+    "description": "Success message after registration"
+  },
+  "registration.form.error.failed": {
+    "message": "Registration failed. Please try again later.",
+    "description": "Error message when registration fails"
+  },
+  "registration.form.title": {
+    "message": "Registration Form",
+    "description": "Registration form title"
+  },
+  "registration.form.processing": {
+    "message": "Processing your registration...",
+    "description": "Processing registration message"
+  },
+  "registration.form.success.title": {
+    "message": "Registration successful!",
+    "description": "Success title"
+  },
+  "registration.form.success.details": {
+    "message": "We have registered you in our participant database and will inform you about the next steps.",
+    "description": "Success details"
+  },
+  "registration.form.firstName": {
+    "message": "First Name",
+    "description": "First name field label"
+  },
+  "registration.form.firstName.placeholder": {
+    "message": "John",
+    "description": "First name placeholder"
+  },
+  "registration.form.lastName": {
+    "message": "Last Name",
+    "description": "Last name field label"
+  },
+  "registration.form.lastName.placeholder": {
+    "message": "Doe",
+    "description": "Last name placeholder"
+  },
+  "registration.form.email": {
+    "message": "Email",
+    "description": "Email field label"
+  },
+  "registration.form.email.placeholder": {
+    "message": "your.email@example.com",
+    "description": "Email placeholder"
+  },
+  "registration.form.organization": {
+    "message": "Organization",
+    "description": "Organization field label"
+  },
+  "registration.form.organization.placeholder": {
+    "message": "Your Organization",
+    "description": "Organization placeholder"
+  },
+  "registration.form.eventUpdates": {
+    "message": "Yes, I would like to receive information about similar events after the event and participate in the feedback survey. (Withdrawal possible at any time)",
+    "description": "Event updates checkbox"
+  },
+  "registration.form.submit": {
+    "message": "Register Now",
+    "description": "Submit button"
+  },
+  "registration.page.title": {
+    "message": "Register | GovTech Hackathon",
+    "description": "Registration page title"
+  },
+  "registration.page.description": {
+    "message": "Register for the GovTech Hackathon and help shape the public sector",
+    "description": "Registration page description"
+  },
+  "registration.header.title": {
+    "message": "Registration",
+    "description": "Registration header"
+  },
+  "registration.header.description": {
+    "message": "Be part of the initiative to modernize the public sector",
+    "description": "Registration header description"
+  },
+  "registration.section.description": {
+    "message": "Register for the GovTech Hackathon and become part of our community. We will keep you informed about upcoming events, challenges and important updates.",
+    "description": "Registration section description"
+  },
+  "privacy.page.title": {
+    "message": "Privacy Policy | GovTech Hackathon",
+    "description": "Privacy page title"
+  },
+  "privacy.page.description": {
+    "message": "Privacy Policy for the GovTech Hackathon",
+    "description": "Privacy page description"
+  },
+  "privacy.header.title": {
+    "message": "Privacy Policy",
+    "description": "Privacy header"
+  },
+  "events.page.title": {
+    "message": "Events | GovTech Hackathon",
+    "description": "Events page title"
+  },
+  "events.page.description": {
+    "message": "Discover our events in the run-up to the GovTech Hackathon",
+    "description": "Events page description"
+  },
+  "events.header.title": {
+    "message": "Events",
+    "description": "Events header title"
+  },
+  "events.header.description": {
+    "message": "Prepare for the hackathon and network with like-minded people",
+    "description": "Events header description"
+  },
+  "events.intro.text": {
+    "message": "The GovTech Hackathon is accompanied by various events that help you prepare optimally and get to know other participants.",
+    "description": "Events intro text"
+  },
+  "events.comingSoon.title": {
+    "message": "More information coming soon",
+    "description": "Coming soon title"
+  },
+  "events.comingSoon.text": {
+    "message": "We are currently working on an exciting event program for you. Check back soon or register to receive updates.",
+    "description": "Coming soon text"
+  },
+  "events.saveDate": {
+    "message": "Save the Date",
+    "description": "Save the date"
+  },
+  "events.hackathon.name": {
+    "message": "GovTech Hackathon",
+    "description": "Hackathon name"
+  },
+  "events.hackathon.date": {
+    "message": "October 11 & 12, 2025",
+    "description": "Hackathon date"
+  },
+  "events.hackathon.location": {
+    "message": "East Side Fab e.V., Saarbrücken",
+    "description": "Hackathon location"
+  },
+  "events.cta.title": {
+    "message": "Become part of the GovTech ecosystem",
+    "description": "CTA title"
+  },
+  "events.cta.text": {
+    "message": "Register now and be the first to know when we announce new events. Participation in the preparatory events is free of charge.",
+    "description": "CTA text"
+  },
+  "events.cta.register": {
+    "message": "Register",
+    "description": "Register button"
+  },
+  "events.cta.faq": {
+    "message": "FAQ",
+    "description": "FAQ button"
+  },
+  "home.page.title": {
+    "message": "GovTech Hackathon",
+    "description": "Homepage title"
+  },
+  "home.page.description": {
+    "message": "Open Government Hackathon – Boost the Public Sector",
+    "description": "Homepage description"
+  },
+  "home.hero.tagline": {
+    "message": "Boost the Public Sector",
+    "description": "Hero tagline"
+  },
+  "home.hero.subtitle": {
+    "message": "The Hackathon on October 11 & 12, 2025 in Saarland",
+    "description": "Hero subtitle"
+  },
+  "home.hero.explanation": {
+    "message": "In the heart of Europe, where Germany, France and Luxembourg meet, we are shaping the future of the public sector. Saarland as an innovative technology location and bridge between cultures offers the perfect setting for our GovTech Hackathon - an intensive creative and programming marathon where visionary minds from various disciplines develop groundbreaking solutions for tomorrow's digital administration in just 48 hours.",
+    "description": "Hero explanation"
+  },
+  "home.hero.registerButton": {
+    "message": "Register Now",
+    "description": "Register button"
+  },
+  "home.hero.infoButton": {
+    "message": "More Info",
+    "description": "Info button"
+  },
+  "home.terminal.title": {
+    "message": "Event Details",
+    "description": "Terminal title"
+  },
+  "home.terminal.comment": {
+    "message": "# Mark your calendar: The GovTech event of the year!",
+    "description": "Terminal comment"
+  },
+  "home.terminal.output": {
+    "message": "It starts on October 11, 2025: In just 48 hours, we will develop new solutions together for pressing challenges in the public sector. Be there when creativity and technology meet - and help shape tomorrow's future.",
+    "description": "Terminal output"
+  },
+  "home.where.title": {
+    "message": "Venue",
+    "description": "Where section title"
+  },
+  "home.where.location.label": {
+    "message": "LOCATION",
+    "description": "Location label"
+  },
+  "home.where.address.label": {
+    "message": "ADDRESS",
+    "description": "Address label"
+  },
+  "home.where.coordinates.label": {
+    "message": "COORDINATES",
+    "description": "Coordinates label"
+  },
+  "home.where.navigate": {
+    "message": "Navigate with Google Maps",
+    "description": "Navigate with Google Maps"
+  },
+  "countdown.days.short": {
+    "message": "D",
+    "description": "Days short label"
+  },
+  "countdown.days": {
+    "message": "DAYS",
+    "description": "Days label"
+  },
+  "countdown.hours.short": {
+    "message": "H",
+    "description": "Hours short label"
+  },
+  "countdown.hours": {
+    "message": "HRS",
+    "description": "Hours label"
+  },
+  "countdown.minutes.short": {
+    "message": "M",
+    "description": "Minutes short label"
+  },
+  "countdown.minutes": {
+    "message": "MIN",
+    "description": "Minutes label"
+  },
+  "countdown.seconds.short": {
+    "message": "S",
+    "description": "Seconds short label"
+  },
+  "countdown.seconds": {
+    "message": "SEC",
+    "description": "Seconds label"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Docs pages",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Previous",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Next",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "latest version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "One doc tagged|{count} docs tagged",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} with \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.common.editThisPage": {
+    "message": "Edit this page",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direct link to {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " on {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " by {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Last updated{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "Page Not Found",
+    "description": "The title of the 404 page"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Close",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Copied",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copy code to clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Copy",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NotFound.p1": {
+    "message": "We could not find what you were looking for.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "On this page",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "One min read|{readingTime} min read",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Read more",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Collapse sidebar",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Back to main menu",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expand sidebar",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "This author has not written any posts yet.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Try again",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Skip to main content",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
   }
 }

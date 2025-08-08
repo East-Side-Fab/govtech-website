@@ -1,20 +1,33 @@
 import React from "react";
 import Layout from "@theme/Layout";
+import Translate, { translate } from "@docusaurus/Translate";
 import styles from "./datenschutz.module.css";
 import { ParticleBackground } from "../components/ParticleBackground";
 
 export default function Datenschutz(): React.ReactElement {
   return (
     <Layout
-      title="Datenschutzerklärung | GovTech Hackathon"
-      description="Datenschutzerklärung für den GovTech Hackathon"
+      title={translate({
+        id: "privacy.page.title",
+        message: "Datenschutzerklärung | GovTech Hackathon",
+        description: "Privacy page title"
+      })}
+      description={translate({
+        id: "privacy.page.description",
+        message: "Datenschutzerklärung für den GovTech Hackathon",
+        description: "Privacy page description"
+      })}
     >
       <ParticleBackground />
 
       <header className={styles.header}>
         <div className={styles.gridOverlay}></div>
         <div className={styles.headerContent}>
-          <h1>Datenschutzerklärung</h1>
+          <h1>
+            <Translate id="privacy.header.title" description="Privacy header">
+              Datenschutzerklärung
+            </Translate>
+          </h1>
         </div>
       </header>
 

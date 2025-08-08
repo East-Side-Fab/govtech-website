@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { translate } from "@docusaurus/Translate";
 import styles from "./styles.module.css";
 
 interface CountdownTimerProps {
@@ -69,12 +70,65 @@ export function CountdownTimer({
   }, [targetDate]);
 
   // Use shorter labels for small screens
-  const getDayLabel = () =>
-    windowWidth <= 380 ? "D" : windowWidth <= 576 ? "DAYS" : "DAYS";
-  const getHourLabel = () =>
-    windowWidth <= 380 ? "H" : windowWidth <= 576 ? "HRS" : "HRS";
-  const getMinLabel = () => (windowWidth <= 380 ? "M" : "MIN");
-  const getSecLabel = () => (windowWidth <= 380 ? "S" : "SEC");
+  const getDayLabel = () => {
+    if (windowWidth <= 380) {
+      return translate({
+        id: "countdown.days.short",
+        message: "D",
+        description: "Days short label"
+      });
+    }
+    return translate({
+      id: "countdown.days",
+      message: "DAYS",
+      description: "Days label"
+    });
+  };
+  
+  const getHourLabel = () => {
+    if (windowWidth <= 380) {
+      return translate({
+        id: "countdown.hours.short",
+        message: "H",
+        description: "Hours short label"
+      });
+    }
+    return translate({
+      id: "countdown.hours",
+      message: "HRS",
+      description: "Hours label"
+    });
+  };
+  
+  const getMinLabel = () => {
+    if (windowWidth <= 380) {
+      return translate({
+        id: "countdown.minutes.short",
+        message: "M",
+        description: "Minutes short label"
+      });
+    }
+    return translate({
+      id: "countdown.minutes",
+      message: "MIN",
+      description: "Minutes label"
+    });
+  };
+  
+  const getSecLabel = () => {
+    if (windowWidth <= 380) {
+      return translate({
+        id: "countdown.seconds.short",
+        message: "S",
+        description: "Seconds short label"
+      });
+    }
+    return translate({
+      id: "countdown.seconds",
+      message: "SEC",
+      description: "Seconds label"
+    });
+  };
 
   return (
     <div className={styles.countdownContainer}>
