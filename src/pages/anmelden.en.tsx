@@ -195,13 +195,11 @@ const RegistrationForm = () => {
                     className={styles.checkbox}
                   />
                   <span className={styles.checkboxText}>
-                    Yes, I subscribe to the East Side Fab newsletter to receive 
-                    information about other exciting events and updates.
-                    Information about{" "}
+                    I hereby agree that East Side Fab e.V. as part of the European Digital Innovation Hub (EDIH Saarland) as a cooperation partner of the event "GovTech Hackathon Saarland" may use my e-mail address to send advertising for similar goods/services. You can revoke your consent at any time vis-à-vis East Side Fab e.V., without affecting the lawfulness of processing based on consent before its withdrawal. I have taken note of this information and the{" "}
                     <Link to="/datenschutz" className={styles.privacyLink}>
-                      data protection
-                    </Link>{" "}
-                    and revocation have been read.
+                      privacy policy
+                    </Link>
+                    .
                   </span>
                 </label>
               </div>

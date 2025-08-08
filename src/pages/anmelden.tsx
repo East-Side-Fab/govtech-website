@@ -195,13 +195,11 @@ const RegistrationForm = () => {
                     className={styles.checkbox}
                   />
                   <span className={styles.checkboxText}>
-                    Ja, ich abonniere den Newsletter des East Side Fabs um über
-                    weitere spannende Events und Informationen zu erhalten.
-                    Hinweise zum{" "}
+                    Hiermit stimme ich zu, dass der East Side Fab e.V. im Rahmen des European Digital Innovation Hubs (EDIH Saarland) als Kooperationspartner der Veranstaltung "GovTech Hackathon Saarland" meine E-Mail-Adresse zum Versand von Werbung für ähnliche Waren / Dienstleistungen verwenden darf. Sie können Ihre Einwilligung jederzeit gegenüber dem East Side Fab e.V. widerrufen, ohne dass die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung berührt wird. Ich habe diesen Hinweis und die{" "}
                     <Link to="/datenschutz" className={styles.privacyLink}>
-                      Datenschutz
+                      Datenschutzerklärung
                     </Link>{" "}
-                    und Widerruf habe ich gelesen.
+                    zur Kenntnis genommen.
                   </span>
                 </label>
               </div>
