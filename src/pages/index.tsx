@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "@theme/Layout";
 import CodeBlock from "@theme/CodeBlock";
+import Translate, { translate } from "@docusaurus/Translate";
 import styles from "./index.module.css";
 import { GlitchText } from "../components/GlitchText";
 import { ParticleBackground } from "../components/ParticleBackground";
@@ -23,8 +24,16 @@ export default function Hackathon(): JSX.Element {
 
   return (
     <Layout
-      title="GovTech Hackathon"
-      description="Open Government Hackathon – Boost the Public Sector"
+      title={translate({
+        id: "home.page.title",
+        message: "GovTech Hackathon",
+        description: "Homepage title"
+      })}
+      description={translate({
+        id: "home.page.description",
+        message: "Open Government Hackathon – Boost the Public Sector",
+        description: "Homepage description"
+      })}
     >
       {/* Interactive Particle Background */}
       <ParticleBackground />
@@ -36,35 +45,53 @@ export default function Hackathon(): JSX.Element {
           <GlitchText text="GovTech Hackathon" element="h1" />
           <div className={styles.heroTagline}>
             <span className={styles.bracket}>{`{`}</span>
-            <span className={styles.taglineText}>Boost the Public Sector</span>
+            <span className={styles.taglineText}>
+              <Translate id="home.hero.tagline" description="Hero tagline">
+                Boost the Public Sector
+              </Translate>
+            </span>
             <span className={styles.bracket}>{`}`}</span>
           </div>
           <div className={styles.heroSubtitle}>
-            <h2>Der Hackathon am 11. & 12. Oktober 2025 im Saarland</h2>
+            <h2>
+              <Translate id="home.hero.subtitle" description="Hero subtitle">
+                Der Hackathon am 11. & 12. Oktober 2025 im Saarland
+              </Translate>
+            </h2>
           </div>
           <CountdownTimer targetDate="2025-10-11T00:00:00" />
 
           {/* Explanation moved under countdown timer as requested */}
           <div className={styles.heroExplanation}>
             <p className={styles.explanationText}>
-              Im Herzen Europas, wo Deutschland, Frankreich und Luxemburg
-              aufeinandertreffen, gestalten wir die Zukunft des öffentlichen
-              Sektors. Das Saarland als innovativer Technologiestandort und
-              Brücke zwischen den Kulturen bietet den perfekten Rahmen für
-              unseren GovTech Hackathon – ein intensiver Kreativ- und
-              Programmiermarathon, bei dem visionäre Köpfe aus verschiedenen
-              Disziplinen in nur 48 Stunden bahnbrechende Lösungen für die
-              digitale Verwaltung von morgen entwickeln.
+              <Translate id="home.hero.explanation" description="Hero explanation">
+                Im Herzen Europas, wo Deutschland, Frankreich und Luxemburg
+                aufeinandertreffen, gestalten wir die Zukunft des öffentlichen
+                Sektors. Das Saarland als innovativer Technologiestandort und
+                Brücke zwischen den Kulturen bietet den perfekten Rahmen für
+                unseren GovTech Hackathon – ein intensiver Kreativ- und
+                Programmiermarathon, bei dem visionäre Köpfe aus verschiedenen
+                Disziplinen in nur 48 Stunden bahnbrechende Lösungen für die
+                digitale Verwaltung von morgen entwickeln.
+              </Translate>
             </p>
           </div>
 
           <div className={styles.heroButtons}>
             <a href="anmelden" className={styles.primaryBtn}>
               <span className={styles.btnGlow}></span>
-              <span>Jetzt anmelden</span>
+              <span>
+                <Translate id="home.hero.registerButton" description="Register button">
+                  Jetzt anmelden
+                </Translate>
+              </span>
             </a>
             <a href="docs/faq" className={styles.secondaryBtn}>
-              <span>Mehr Infos</span>
+              <span>
+                <Translate id="home.hero.infoButton" description="Info button">
+                  Mehr Infos
+                </Translate>
+              </span>
             </a>
           </div>
         </div>
@@ -79,21 +106,29 @@ export default function Hackathon(): JSX.Element {
               <span className={styles.terminalCircle}></span>
               <span className={styles.terminalCircle}></span>
             </div>
-            <div className={styles.terminalTitle}>Event Details</div>
+            <div className={styles.terminalTitle}>
+              <Translate id="home.terminal.title" description="Terminal title">
+                Event Details
+              </Translate>
+            </div>
           </div>
           <div className={styles.terminal}>
             <div className={styles.terminalLine}>
               <span className={styles.comment}>
-                # Markiere dir den Termin: Das GovTech-Event des Jahres!
+                <Translate id="home.terminal.comment" description="Terminal comment">
+                  # Markiere dir den Termin: Das GovTech-Event des Jahres!
+                </Translate>
               </span>
             </div>
             <div className={styles.terminalLine}>
               <span className={styles.output}>
-                Am 11. Oktober 2025 geht es los: In nur 48 Stunden entwickeln
-                wir gemeinsam neue Lösungen für drängende Herausforderungen im
-                öffentlichen Sektor. Sei dabei, wenn Kreativität und Technologie
-                aufeinandertreffen – und hilf, die Zukunft von morgen zu
-                gestalten.
+                <Translate id="home.terminal.output" description="Terminal output">
+                  Am 11. Oktober 2025 geht es los: In nur 48 Stunden entwickeln
+                  wir gemeinsam neue Lösungen für drängende Herausforderungen im
+                  öffentlichen Sektor. Sei dabei, wenn Kreativität und Technologie
+                  aufeinandertreffen – und hilf, die Zukunft von morgen zu
+                  gestalten.
+                </Translate>
               </span>
             </div>
           </div>
@@ -102,15 +137,27 @@ export default function Hackathon(): JSX.Element {
         {/* "WHERE" Section with Map/Coordinates */}
         <section className={styles.whereSection}>
           <div className={styles.whereContent}>
-            <h2 className={styles.sectionTitle}>Veranstaltungsort</h2>
+            <h2 className={styles.sectionTitle}>
+              <Translate id="home.where.title" description="Where section title">
+                Veranstaltungsort
+              </Translate>
+            </h2>
             <div className={styles.whereData}>
               <div className={styles.whereCoordinates}>
                 <div className={styles.coordinateColumn}>
-                  <div className={styles.coordLabel}>LOCATION</div>
+                  <div className={styles.coordLabel}>
+                    <Translate id="home.where.location.label" description="Location label">
+                      LOCATION
+                    </Translate>
+                  </div>
                   <div className={styles.coordValue}>East Side Fab e.V.</div>
                 </div>
                 <div className={styles.coordinateColumn}>
-                  <div className={styles.coordLabel}>ADRESSE</div>
+                  <div className={styles.coordLabel}>
+                    <Translate id="home.where.address.label" description="Address label">
+                      ADRESSE
+                    </Translate>
+                  </div>
                   <div className={styles.coordValue}>
                     Eschberger Weg 40
                     <br />
@@ -118,7 +165,11 @@ export default function Hackathon(): JSX.Element {
                   </div>
                 </div>
                 <div className={styles.coordinateColumn}>
-                  <div className={styles.coordLabel}>KOORDINATEN</div>
+                  <div className={styles.coordLabel}>
+                    <Translate id="home.where.coordinates.label" description="Coordinates label">
+                      KOORDINATEN
+                    </Translate>
+                  </div>
                   <div className={styles.coordValue}>49.2354° N, 7.0085° E</div>
                 </div>
                 <div className={styles.coordinateColumn}>
@@ -128,8 +179,10 @@ export default function Hackathon(): JSX.Element {
                     rel="noopener noreferrer"
                     className={styles.mapsLink}
                   >
-                    <span className={styles.mapsIcon}>📍</span> Mit Google Maps
-                    navigieren
+                    <span className={styles.mapsIcon}>📍</span> 
+                    <Translate id="home.where.navigate" description="Navigate with Google Maps">
+                      Mit Google Maps navigieren
+                    </Translate>
                   </a>
                 </div>
               </div>
@@ -141,6 +194,9 @@ export default function Hackathon(): JSX.Element {
                     width="100%"
                     height="100%"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=7.02902913093567%2C49.227831153236366%2C7.033041715621949%2C49.22910631917016&amp;layer=mapnik"
+                    scrolling="no"
+                    style={{ pointerEvents: 'none' }}
+                    title="East Side Fab Location Map"
                   ></iframe>
                   <br />
                   <small>
