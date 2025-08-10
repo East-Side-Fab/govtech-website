@@ -158,7 +158,7 @@ const config: Config = {
             },
             {
               label: "Impressum",
-              href: "https://eastsidefab.de/impressum/",
+              to: "/impressum",
             },
             {
               label: "Datenschutz",
