@@ -137,19 +137,6 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
-          items: [
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/yourorg",
-            },
-          ],
-        },
-        {
           title: "More",
           items: [
             {
