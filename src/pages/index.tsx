@@ -27,12 +27,12 @@ export default function Hackathon(): JSX.Element {
       title={translate({
         id: "home.page.title",
         message: "GovTech Hackathon",
-        description: "Homepage title"
+        description: "Homepage title",
       })}
       description={translate({
         id: "home.page.description",
         message: "Open Government Hackathon – Boost the Public Sector",
-        description: "Homepage description"
+        description: "Homepage description",
       })}
     >
       {/* Interactive Particle Background */}
@@ -64,7 +64,10 @@ export default function Hackathon(): JSX.Element {
           {/* Explanation moved under countdown timer as requested */}
           <div className={styles.heroExplanation}>
             <p className={styles.explanationText}>
-              <Translate id="home.hero.explanation" description="Hero explanation">
+              <Translate
+                id="home.hero.explanation"
+                description="Hero explanation"
+              >
                 Im Herzen Europas, wo Deutschland, Frankreich und Luxemburg
                 aufeinandertreffen, gestalten wir die Zukunft des öffentlichen
                 Sektors. Das Saarland als innovativer Technologiestandort und
@@ -81,7 +84,10 @@ export default function Hackathon(): JSX.Element {
             <a href="anmelden" className={styles.primaryBtn}>
               <span className={styles.btnGlow}></span>
               <span>
-                <Translate id="home.hero.registerButton" description="Register button">
+                <Translate
+                  id="home.hero.registerButton"
+                  description="Register button"
+                >
                   Jetzt anmelden
                 </Translate>
               </span>
@@ -115,19 +121,25 @@ export default function Hackathon(): JSX.Element {
           <div className={styles.terminal}>
             <div className={styles.terminalLine}>
               <span className={styles.comment}>
-                <Translate id="home.terminal.comment" description="Terminal comment">
+                <Translate
+                  id="home.terminal.comment"
+                  description="Terminal comment"
+                >
                   # Markiere dir den Termin: Das GovTech-Event des Jahres!
                 </Translate>
               </span>
             </div>
             <div className={styles.terminalLine}>
               <span className={styles.output}>
-                <Translate id="home.terminal.output" description="Terminal output">
+                <Translate
+                  id="home.terminal.output"
+                  description="Terminal output"
+                >
                   Am 11. Oktober 2025 geht es los: In nur 48 Stunden entwickeln
                   wir gemeinsam neue Lösungen für drängende Herausforderungen im
-                  öffentlichen Sektor. Sei dabei, wenn Kreativität und Technologie
-                  aufeinandertreffen – und hilf, die Zukunft von morgen zu
-                  gestalten.
+                  öffentlichen Sektor. Sei dabei, wenn Kreativität und
+                  Technologie aufeinandertreffen – und hilf, die Zukunft von
+                  morgen zu gestalten.
                 </Translate>
               </span>
             </div>
@@ -138,7 +150,10 @@ export default function Hackathon(): JSX.Element {
         <section className={styles.whereSection}>
           <div className={styles.whereContent}>
             <h2 className={styles.sectionTitle}>
-              <Translate id="home.where.title" description="Where section title">
+              <Translate
+                id="home.where.title"
+                description="Where section title"
+              >
                 Veranstaltungsort
               </Translate>
             </h2>
@@ -146,7 +161,10 @@ export default function Hackathon(): JSX.Element {
               <div className={styles.whereCoordinates}>
                 <div className={styles.coordinateColumn}>
                   <div className={styles.coordLabel}>
-                    <Translate id="home.where.location.label" description="Location label">
+                    <Translate
+                      id="home.where.location.label"
+                      description="Location label"
+                    >
                       LOCATION
                     </Translate>
                   </div>
@@ -154,7 +172,10 @@ export default function Hackathon(): JSX.Element {
                 </div>
                 <div className={styles.coordinateColumn}>
                   <div className={styles.coordLabel}>
-                    <Translate id="home.where.address.label" description="Address label">
+                    <Translate
+                      id="home.where.address.label"
+                      description="Address label"
+                    >
                       ADRESSE
                     </Translate>
                   </div>
@@ -166,7 +187,10 @@ export default function Hackathon(): JSX.Element {
                 </div>
                 <div className={styles.coordinateColumn}>
                   <div className={styles.coordLabel}>
-                    <Translate id="home.where.coordinates.label" description="Coordinates label">
+                    <Translate
+                      id="home.where.coordinates.label"
+                      description="Coordinates label"
+                    >
                       KOORDINATEN
                     </Translate>
                   </div>
@@ -179,8 +203,11 @@ export default function Hackathon(): JSX.Element {
                     rel="noopener noreferrer"
                     className={styles.mapsLink}
                   >
-                    <span className={styles.mapsIcon}>📍</span> 
-                    <Translate id="home.where.navigate" description="Navigate with Google Maps">
+                    <span className={styles.mapsIcon}>📍</span>
+                    <Translate
+                      id="home.where.navigate"
+                      description="Navigate with Google Maps"
+                    >
                       Mit Google Maps navigieren
                     </Translate>
                   </a>
@@ -195,7 +222,7 @@ export default function Hackathon(): JSX.Element {
                     height="100%"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=7.02902913093567%2C49.227831153236366%2C7.033041715621949%2C49.22910631917016&amp;layer=mapnik"
                     scrolling="no"
-                    style={{ pointerEvents: 'none' }}
+                    style={{ pointerEvents: "none" }}
                     title="East Side Fab Location Map"
                   ></iframe>
                   <br />
@@ -252,11 +279,13 @@ export default function Hackathon(): JSX.Element {
 
         {/* Partners Section - Organizers */}
         <section className={styles.partnersSection}>
-          <h2 className={styles.sectionTitle}>Eine Kooperationsveranstaltung von</h2>
+          <h2 className={styles.sectionTitle}>
+            Eine Kooperationsveranstaltung von
+          </h2>
           <div className={styles.partnersLogos}>
             <div className={styles.partnerItem}>
               <img
-                src="img/logos/east-side-fab_-300x147.png"
+                src="img/logos/east-side-fab.png"
                 alt="East Side Fab"
                 className={styles.partnerLogo}
               />
@@ -279,7 +308,7 @@ export default function Hackathon(): JSX.Element {
               <img
                 src="img/logos/kleinpublic.png"
                 alt="kleinpublic"
-                className={styles.partnerLogo}
+                className={`${styles.partnerLogo} ${styles.partnerLogoDark}`}
               />
             </div>
           </div>
@@ -291,7 +320,7 @@ export default function Hackathon(): JSX.Element {
           <div className={styles.sponsorsLogos}>
             <div className={styles.sponsorItem}>
               <img
-                src="img/logos/MWIDE-768x384.jpg"
+                src="img/logos/MWIDE.png"
                 alt="Ministerium für Wirtschaft, Innovation, Digitales und Energie Saarland"
                 className={styles.sponsorLogo}
               />
