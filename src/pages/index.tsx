@@ -250,28 +250,35 @@ export default function Hackathon(): JSX.Element {
           </div>
         </section>
 
-        {/* Partners Section */}
+        {/* Partners Section - Organizers */}
         <section className={styles.partnersSection}>
-          <h2 className={styles.sectionTitle}>Partner</h2>
+          <h2 className={styles.sectionTitle}>Eine Kooperationsveranstaltung von</h2>
           <div className={styles.partnersLogos}>
             <div className={styles.partnerItem}>
               <img
-                src="img/logos/partner1.png"
-                alt="Partner 1"
+                src="img/logos/east-side-fab_-300x147.png"
+                alt="East Side Fab"
                 className={styles.partnerLogo}
               />
             </div>
             <div className={styles.partnerItem}>
               <img
-                src="img/logos/partner2.png"
-                alt="Partner 2"
+                src="img/logos/govlab-ten.png"
+                alt="GovLab Ten"
                 className={styles.partnerLogo}
               />
             </div>
             <div className={styles.partnerItem}>
               <img
-                src="img/logos/partner3.png"
-                alt="Partner 3"
+                src="img/logos/edih.png"
+                alt="EDIH"
+                className={styles.partnerLogo}
+              />
+            </div>
+            <div className={styles.partnerItem}>
+              <img
+                src="img/logos/kleinpublic.png"
+                alt="kleinpublic"
                 className={styles.partnerLogo}
               />
             </div>
@@ -280,26 +287,12 @@ export default function Hackathon(): JSX.Element {
 
         {/* Sponsors Section */}
         <section className={styles.sponsorsSection}>
-          <h2 className={styles.sectionTitle}>Gefördert durch</h2>
+          <h2 className={styles.sectionTitle}>Unterstützt durch</h2>
           <div className={styles.sponsorsLogos}>
             <div className={styles.sponsorItem}>
               <img
-                src="img/logos/sponsor1.png"
-                alt="Sponsor 1"
-                className={styles.sponsorLogo}
-              />
-            </div>
-            <div className={styles.sponsorItem}>
-              <img
-                src="img/logos/sponsor2.png"
-                alt="Sponsor 2"
-                className={styles.sponsorLogo}
-              />
-            </div>
-            <div className={styles.sponsorItem}>
-              <img
-                src="img/logos/sponsor3.png"
-                alt="Sponsor 3"
+                src="img/logos/MWIDE-768x384.jpg"
+                alt="Ministerium für Wirtschaft, Innovation, Digitales und Energie Saarland"
                 className={styles.sponsorLogo}
               />
             </div>
