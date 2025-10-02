@@ -350,7 +350,7 @@ export default function Hackathon(): JSX.Element {
               id="home.sponsors.title"
               description="Sponsors section title"
             >
-              Unterstützt durch
+              Unsere Sponsoren
             </Translate>
           </h2>
           <div className={styles.sponsorsLogos}>
@@ -358,6 +358,20 @@ export default function Hackathon(): JSX.Element {
               <img
                 src="img/logos/MWIDE.png"
                 alt="Ministerium für Wirtschaft, Innovation, Digitales und Energie Saarland"
+                className={`${styles.sponsorLogo} ${styles.sponsorLogoLight}`}
+              />
+            </div>
+            <div className={styles.sponsorItem}>
+              <img
+                src="img/logos/kleinpublic.png"
+                alt="kleinpublic"
+                className={styles.sponsorLogo}
+              />
+            </div>
+            <div className={styles.sponsorItem}>
+              <img
+                src="img/logos/testfabrik.png"
+                alt="testfabrik"
                 className={styles.sponsorLogo}
               />
             </div>
