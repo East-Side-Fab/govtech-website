@@ -271,6 +271,30 @@
     "message": "Navigate with Google Maps",
     "description": "Navigate with Google Maps"
   },
+  "home.challenges.title": {
+    "message": "Challenges",
+    "description": "Challenges section title"
+  },
+  "home.cta.title": {
+    "message": "Be Part of the Change",
+    "description": "CTA section title"
+  },
+  "home.cta.text": {
+    "message": "Secure your spot now and help shape the future of the public sector",
+    "description": "CTA section text"
+  },
+  "home.cta.button": {
+    "message": "Register Now",
+    "description": "CTA register button"
+  },
+  "home.partners.title": {
+    "message": "A Collaborative Event by",
+    "description": "Partners section title"
+  },
+  "home.sponsors.title": {
+    "message": "Supported by",
+    "description": "Sponsors section title"
+  },
   "countdown.days.short": {
     "message": "D",
     "description": "Days short label"

@@ -257,7 +257,14 @@ export default function Hackathon(): JSX.Element {
 
         {/* Challenges Section - NOW WITH CAROUSEL */}
         <section className={styles.challengesSection}>
-          <h2 className={styles.sectionTitle}>Herausforderungen</h2>
+          <h2 className={styles.sectionTitle}>
+            <Translate
+              id="home.challenges.title"
+              description="Challenges section title"
+            >
+              Herausforderungen
+            </Translate>
+          </h2>
           {/* Old static cards removed, TopicCarousel added below */}
           <TopicCarousel />
         </section>
@@ -265,14 +272,31 @@ export default function Hackathon(): JSX.Element {
         {/* CTA Section */}
         <section className={styles.ctaSection}>
           <div className={styles.ctaGlow}></div>
-          <h2 className={styles.ctaTitle}>Sei Teil des Wandels</h2>
+          <h2 className={styles.ctaTitle}>
+            <Translate
+              id="home.cta.title"
+              description="CTA section title"
+            >
+              Sei Teil des Wandels
+            </Translate>
+          </h2>
           <p className={styles.ctaText}>
-            Sichere dir jetzt deinen Platz und gestalte die Zukunft des
-            öffentlichen Sektors mit
+            <Translate
+              id="home.cta.text"
+              description="CTA section text"
+            >
+              Sichere dir jetzt deinen Platz und gestalte die Zukunft des
+              öffentlichen Sektors mit
+            </Translate>
           </p>
           <div className={styles.ctaButtonContainer}>
             <a href="anmelden" className={styles.ctaButton}>
-              Jetzt registrieren
+              <Translate
+                id="home.cta.button"
+                description="CTA register button"
+              >
+                Jetzt registrieren
+              </Translate>
             </a>
           </div>
         </section>
@@ -280,7 +304,12 @@ export default function Hackathon(): JSX.Element {
         {/* Partners Section - Organizers */}
         <section className={styles.partnersSection}>
           <h2 className={styles.sectionTitle}>
-            Eine Kooperationsveranstaltung von
+            <Translate
+              id="home.partners.title"
+              description="Partners section title"
+            >
+              Eine Kooperationsveranstaltung von
+            </Translate>
           </h2>
           <div className={styles.partnersLogos}>
             <div className={styles.partnerItem}>
@@ -316,7 +345,14 @@ export default function Hackathon(): JSX.Element {
 
         {/* Sponsors Section */}
         <section className={styles.sponsorsSection}>
-          <h2 className={styles.sectionTitle}>Unterstützt durch</h2>
+          <h2 className={styles.sectionTitle}>
+            <Translate
+              id="home.sponsors.title"
+              description="Sponsors section title"
+            >
+              Unterstützt durch
+            </Translate>
+          </h2>
           <div className={styles.sponsorsLogos}>
             <div className={styles.sponsorItem}>
               <img

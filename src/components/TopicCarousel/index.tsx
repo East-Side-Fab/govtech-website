@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import styles from './styles.module.css';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 interface Topic {
   id: string;
@@ -9,6 +10,9 @@ interface Topic {
 }
 
 const TopicCarousel = () => {
+  const { i18n } = useDocusaurusContext();
+  const currentLocale = i18n.currentLocale;
+
   const [topics, setTopics] = useState<Topic[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +24,9 @@ const TopicCarousel = () => {
   const autoRotateDelay = 4500;
 
   useEffect(() => {
-    fetch('data/topics.json')
+    // Load topics based on current locale
+    const topicsFile = currentLocale === 'en' ? 'data/topics.en.json' : 'data/topics.json';
+    fetch(topicsFile)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -41,7 +47,7 @@ const TopicCarousel = () => {
         setError('Failed to load topics. Please try again later.');
         setIsLoading(false);
       });
-  }, []);
+  }, [currentLocale]);
 
   const goToNext = useCallback(() => {
     setCurrentIndex((prevIndex) =>

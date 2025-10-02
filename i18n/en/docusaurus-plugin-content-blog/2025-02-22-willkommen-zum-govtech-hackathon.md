@@ -1,57 +1,25 @@
 ---
-slug: welcome-to-govtech-hackathon
-title: Welcome to the GovTech Hackathon
-authors: [daniel]
-tags: [hackathon, govtech, announcement]
+title: "Welcome to the GovTech Hackathon!"
+authors: ["daniel"]
+tags: [hackathon, govtech, innovation]
+date: 2025-02-22
 ---
 
-# Welcome to the GovTech Hackathon - Boost the Public Sector!
+Welcome to our very first blog post about the **GovTech Hackathon**!
 
-We are excited to announce the **GovTech Hackathon 2025** in Saarland! From October 11-12, 2025, creative minds, tech enthusiasts, and innovation drivers will come together to develop groundbreaking solutions for the public sector.
+In the coming weeks and days, we want to keep you all up to date about our hackathon – from exciting workshops and presentations to the innovative ideas that will emerge here. Our goal is to rethink the public sector through technological innovation and bring about sustainable change.
 
-## What is the GovTech Hackathon?
+<!-- truncate -->
 
-The GovTech Hackathon is an intensive 48-hour event where interdisciplinary teams work on real challenges from public administration. Our goal: Making the public sector more digital, efficient, and citizen-friendly.
+**What to expect?**
 
-## Why should you participate?
+- **Inspiration:** Learn how other successful hackathons work and which projects have been implemented in the past.
+- **Exchange:** Learn from experts, make valuable contacts, and share your own ideas.
+- **Action:** Be part of a dynamic team that develops creative solutions for real challenges in just 48 hours.
 
-- **Real Impact**: Your solutions can directly improve citizens' lives
-- **Networking**: Meet like-minded people from tech, administration, and business
-- **Learning Experience**: Learn from experts and expand your skills
-- **Prizes**: Win attractive prizes and potentially see your solution implemented
-- **Fun**: Experience the unique hackathon atmosphere
+We are convinced that innovation and collaboration are the keys to the future. Stay tuned – in this blog we regularly report on news, exciting insights, and helpful tips about the event.
 
-## Who are we looking for?
+Let's revolutionize the public sector together!
 
-Everyone who wants to help shape the digital future of the public sector:
-- Developers and programmers
-- Designers and UX experts
-- Data scientists
-- Project managers
-- Public administration employees
-- Students and interested citizens
-
-## Save the Date!
-
-📅 **When**: October 11-12, 2025
-📍 **Where**: East Side Fab e.V., Saarbrücken
-💰 **Cost**: Free participation
-🎯 **Registration**: Starting soon!
-
-## What's next?
-
-In the coming weeks, we'll share more information about:
-- The specific challenges
-- Our sponsors and partners
-- The jury and mentors
-- Preparatory workshops
-
-Follow us on our [social media channels](#) to stay up to date!
-
-## Questions?
-
-Visit our [FAQ page](/docs/faq) or contact us at [info@govtech-hackathon.saarland](mailto:info@govtech-hackathon.saarland).
-
-We look forward to shaping the future of the public sector with you!
-
-**The GovTech Hackathon Team**
+Have fun and see you soon,
+Your GovTech Team
