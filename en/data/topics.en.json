@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Digital Citizen Services",
+    "description": "Develop intuitive digital solutions for citizen services such as applications, appointment bookings, and administrative procedures. Make contact with public administration simpler and more user-friendly.",
+    "link": "/docs/faq"
+  },
+  {
+    "id": "2",
+    "title": "Open Data & Transparency",
+    "description": "Use open government data for innovative applications. Create transparency and give citizens better access to public information.",
+    "link": "/docs/faq"
+  },
+  {
+    "id": "3",
+    "title": "Smart City Solutions",
+    "description": "Develop intelligent city solutions for traffic, environment, and infrastructure. Improve the quality of life in cities through innovative technologies.",
+    "link": "/docs/faq"
+  },
+  {
+    "id": "4",
+    "title": "Optimize Administrative Processes",
+    "description": "Digitize and automate internal administrative processes. Reduce bureaucracy and increase efficiency in public institutions.",
+    "link": "/docs/faq"
+  }
+]

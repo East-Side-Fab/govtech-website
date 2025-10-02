@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgovhack_website=self.webpackChunkgovhack_website||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to the GovTech Hackathon","permalink":"/en/blog/welcome-to-govtech-hackathon","unlisted":false,"date":"2025-02-22T00:00:00.000Z"}]}')}}]);
