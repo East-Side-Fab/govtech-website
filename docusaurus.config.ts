@@ -103,7 +103,7 @@ const config: Config = {
           position: "left",
           label: "Info",
         },
-        { to: "/events", label: "Events", position: "left" },
+        // { to: "/events", label: "Events", position: "left" },
         { to: "/anmelden", label: "Anmelden", position: "left" },
         {
           type: "localeDropdown",
@@ -126,10 +126,10 @@ const config: Config = {
               label: "Information",
               to: "/docs/intro",
             },
-            {
-              label: "Events",
-              to: "/events",
-            },
+            // {
+            //   label: "Events",
+            //   to: "/events",
+            // },
             {
               label: "Anmelden",
               to: "/anmelden",
