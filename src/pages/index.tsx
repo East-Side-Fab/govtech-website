@@ -59,7 +59,7 @@ export default function Hackathon(): JSX.Element {
               </Translate>
             </h2>
           </div>
-          <CountdownTimer targetDate="2025-10-11T00:00:00" />
+          <CountdownTimer targetDate="2025-10-11T10:00:00" />
 
           {/* Explanation moved under countdown timer as requested */}
           <div className={styles.heroExplanation}>
@@ -273,28 +273,19 @@ export default function Hackathon(): JSX.Element {
         <section className={styles.ctaSection}>
           <div className={styles.ctaGlow}></div>
           <h2 className={styles.ctaTitle}>
-            <Translate
-              id="home.cta.title"
-              description="CTA section title"
-            >
+            <Translate id="home.cta.title" description="CTA section title">
               Sei Teil des Wandels
             </Translate>
           </h2>
           <p className={styles.ctaText}>
-            <Translate
-              id="home.cta.text"
-              description="CTA section text"
-            >
+            <Translate id="home.cta.text" description="CTA section text">
               Sichere dir jetzt deinen Platz und gestalte die Zukunft des
               öffentlichen Sektors mit
             </Translate>
           </p>
           <div className={styles.ctaButtonContainer}>
             <a href="anmelden" className={styles.ctaButton}>
-              <Translate
-                id="home.cta.button"
-                description="CTA register button"
-              >
+              <Translate id="home.cta.button" description="CTA register button">
                 Jetzt registrieren
               </Translate>
             </a>
