@@ -10,11 +10,5 @@
     "title": "AI FOR ADMINISTRATION",
     "description": "Shape the future of digital administration with sovereign AI! Develop innovative use cases for F13, the open-source AI assistant of the Saarland administration. Solve challenges like knowledge loss due to demographic change and optimize administrative processes.",
     "link": "/docs/challenges/ai-challenge"
-  },
-  {
-    "id": "3",
-    "title": "Cyber Security Challenge",
-    "description": "Think like an attacker, act as a defender! Test the Saarland Service Portal for security vulnerabilities and help make it more secure for all citizens. Find vulnerabilities, document them professionally, and contribute to digital security.",
-    "link": "/docs/challenges/cybersecurity-challenge"
   }
 ]
