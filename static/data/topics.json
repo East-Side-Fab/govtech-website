@@ -10,11 +10,5 @@
     "title": "KI für die Verwaltung",
     "description": "Gestalte die Zukunft der digitalen Verwaltung mit souveräner KI! Entwickle innovative Anwendungsfälle für F13, den Open-Source-KI-Assistenten der saarländischen Verwaltung. Löse Herausforderungen wie Wissensverlust durch demografischen Wandel und optimiere Verwaltungsprozesse.",
     "link": "/docs/challenges/ai-challenge"
-  },
-  {
-    "id": "3",
-    "title": "Cyber Security Challenge",
-    "description": "Denke wie ein Angreifer, handle als Verteidiger! Teste das Saarland Service Portal auf Sicherheitslücken und hilf, es für alle Bürger sicherer zu machen. Finde Schwachstellen, dokumentiere sie professionell und trage zur digitalen Sicherheit bei.",
-    "link": "/docs/challenges/cybersecurity-challenge"
   }
 ]

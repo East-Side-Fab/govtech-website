@@ -27,7 +27,6 @@ const sidebars: SidebarsConfig = {
       items: [
         'challenges/data-challenge',
         'challenges/ai-challenge',
-        'challenges/cybersecurity-challenge',
       ],
     },
     {
