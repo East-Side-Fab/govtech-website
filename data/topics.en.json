@@ -1,26 +1,20 @@
 [
   {
     "id": "1",
-    "title": "Digital Citizen Services",
-    "description": "Develop intuitive digital solutions for citizen services such as applications, appointment bookings, and administrative procedures. Make contact with public administration simpler and more user-friendly.",
-    "link": "/docs/faq"
+    "title": "DATA Challenge: Smart Data Usage",
+    "description": "Make open administrative data practical and usable! Develop tools and concepts that provide citizens and administration with quick, user-friendly access to public data. Show how data can be aggregated, visualized, and prepared for individual needs.",
+    "link": "/docs/challenges/data-challenge"
   },
   {
     "id": "2",
-    "title": "Open Data & Transparency",
-    "description": "Use open government data for innovative applications. Create transparency and give citizens better access to public information.",
-    "link": "/docs/faq"
+    "title": "AI FOR ADMINISTRATION",
+    "description": "Shape the future of digital administration with sovereign AI! Develop innovative use cases for F13, the open-source AI assistant of the Saarland administration. Solve challenges like knowledge loss due to demographic change and optimize administrative processes.",
+    "link": "/docs/challenges/ai-challenge"
   },
   {
     "id": "3",
-    "title": "Smart City Solutions",
-    "description": "Develop intelligent city solutions for traffic, environment, and infrastructure. Improve the quality of life in cities through innovative technologies.",
-    "link": "/docs/faq"
-  },
-  {
-    "id": "4",
-    "title": "Optimize Administrative Processes",
-    "description": "Digitize and automate internal administrative processes. Reduce bureaucracy and increase efficiency in public institutions.",
-    "link": "/docs/faq"
+    "title": "Cyber Security Challenge",
+    "description": "Think like an attacker, act as a defender! Test the Saarland Service Portal for security vulnerabilities and help make it more secure for all citizens. Find vulnerabilities, document them professionally, and contribute to digital security.",
+    "link": "/docs/challenges/cybersecurity-challenge"
   }
 ]
