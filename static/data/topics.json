@@ -1,26 +1,20 @@
 [
   {
     "id": "1",
-    "title": "Digitale Bürgerdienste",
-    "description": "Entwickle intuitive digitale Lösungen für Bürgerdienste wie Anträge, Terminbuchungen und Behördengänge. Mache den Kontakt mit der Verwaltung einfacher und benutzerfreundlicher.",
-    "link": "/docs/faq"
+    "title": "DATA Challenge: Intelligente Datennutzung",
+    "description": "Mache offene Verwaltungsdaten praktisch nutzbar! Entwickle Tools und Konzepte, die Bürgern und Verwaltung schnellen, benutzerfreundlichen Zugang zu öffentlichen Daten ermöglichen. Zeige, wie Daten aggregiert, visualisiert und für individuelle Bedürfnisse aufbereitet werden können.",
+    "link": "/docs/challenges/data-challenge"
   },
   {
     "id": "2",
-    "title": "Open Data & Transparenz",
-    "description": "Nutze offene Verwaltungsdaten für innovative Anwendungen. Schaffe Transparenz und ermögliche Bürgern besseren Zugang zu öffentlichen Informationen.",
-    "link": "/docs/faq"
+    "title": "KI für die Verwaltung",
+    "description": "Gestalte die Zukunft der digitalen Verwaltung mit souveräner KI! Entwickle innovative Anwendungsfälle für F13, den Open-Source-KI-Assistenten der saarländischen Verwaltung. Löse Herausforderungen wie Wissensverlust durch demografischen Wandel und optimiere Verwaltungsprozesse.",
+    "link": "/docs/challenges/ai-challenge"
   },
   {
     "id": "3",
-    "title": "Smart City Lösungen",
-    "description": "Entwickle intelligente Stadtlösungen für Verkehr, Umwelt und Infrastruktur. Verbessere die Lebensqualität in Städten durch innovative Technologien.",
-    "link": "/docs/faq"
-  },
-  {
-    "id": "4",
-    "title": "Verwaltungsprozesse optimieren",
-    "description": "Digitalisiere und automatisiere interne Verwaltungsprozesse. Reduziere Bürokratie und erhöhe die Effizienz in öffentlichen Einrichtungen.",
-    "link": "/docs/faq"
+    "title": "Cyber Security Challenge",
+    "description": "Denke wie ein Angreifer, handle als Verteidiger! Teste das Saarland Service Portal auf Sicherheitslücken und hilf, es für alle Bürger sicherer zu machen. Finde Schwachstellen, dokumentiere sie professionell und trage zur digitalen Sicherheit bei.",
+    "link": "/docs/challenges/cybersecurity-challenge"
   }
 ]

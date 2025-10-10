@@ -22,6 +22,16 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Challenges',
+      collapsed: false,
+      items: [
+        'challenges/data-challenge',
+        'challenges/ai-challenge',
+        'challenges/cybersecurity-challenge',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Ablauf',
       collapsed: false,
       link: {
