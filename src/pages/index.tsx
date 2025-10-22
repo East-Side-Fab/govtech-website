@@ -59,7 +59,7 @@ export default function Hackathon(): JSX.Element {
               </Translate>
             </h2>
           </div>
-          <CountdownTimer targetDate="2025-10-11T10:00:00" />
+
 
           {/* Explanation moved under countdown timer as requested */}
           <div className={styles.heroExplanation}>
