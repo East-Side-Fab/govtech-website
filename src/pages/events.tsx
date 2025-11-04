@@ -30,8 +30,7 @@ export default function EventsPage(): JSX.Element {
           </h1>
           <p className={styles.headerDescription}>
             <Translate id="events.header.description" description="Events header description">
-              Bereite dich auf den Hackathon vor und vernetze dich mit
-              Gleichgesinnten
+              Rückblick auf den GovTech Hackathon 2025
             </Translate>
           </p>
         </div>
@@ -42,9 +41,8 @@ export default function EventsPage(): JSX.Element {
           <div className={styles.sectionIntro}>
             <p className={styles.introText}>
               <Translate id="events.intro.text" description="Events intro text">
-                Der GovTech Hackathon wird von verschiedenen Veranstaltungen
-                begleitet, die dir helfen, dich optimal vorzubereiten und andere
-                Teilnehmer kennenzulernen.
+                Der GovTech Hackathon 2025 wurde von verschiedenen Veranstaltungen
+                begleitet. Vielen Dank an alle Teilnehmer für das großartige Event!
               </Translate>
             </p>
           </div>
@@ -91,25 +89,24 @@ export default function EventsPage(): JSX.Element {
           <div className={styles.ctaSection}>
             <h2>
               <Translate id="events.cta.title" description="CTA title">
-                Werde Teil des GovTech Ökosystems
+                Bleib dran für 2026!
               </Translate>
             </h2>
             <p>
               <Translate id="events.cta.text" description="CTA text">
-                Melde dich jetzt an und sei als Erste*r dabei, wenn wir neue
-                Events ankündigen. Die Teilnahme an den
-                Vorbereitungsveranstaltungen ist kostenlos.
+                Der GovTech Hackathon 2025 war ein großer Erfolg! Schau dir das
+                After Movie an und bleib dran für Updates zum nächsten Event.
               </Translate>
             </p>
             <div className={styles.ctaButtons}>
-              <a href="/anmelden" className={styles.primaryButton}>
-                <Translate id="events.cta.register" description="Register button">
-                  Zur Anmeldung
+              <a href="/" className={styles.primaryButton}>
+                <Translate id="events.cta.register" description="After Movie button">
+                  🎬 After Movie ansehen
                 </Translate>
               </a>
               <a href="/docs/faq" className={styles.secondaryButton}>
                 <Translate id="events.cta.faq" description="FAQ button">
-                  FAQ
+                  FAQ (2025 Archiv)
                 </Translate>
               </a>
             </div>

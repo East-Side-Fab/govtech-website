@@ -55,7 +55,7 @@ export default function Hackathon(): JSX.Element {
           <div className={styles.heroSubtitle}>
             <h2>
               <Translate id="home.hero.subtitle" description="Hero subtitle">
-                Der Hackathon am 11. & 12. Oktober 2025 im Saarland
+                Vielen Dank an alle Teilnehmer! Bis zum nächsten Jahr! 🎉
               </Translate>
             </h2>
           </div>
@@ -81,7 +81,8 @@ export default function Hackathon(): JSX.Element {
           </div>
 
           <div className={styles.heroButtons}>
-            <a href="anmelden" className={styles.primaryBtn}>
+            {/* Registration button removed - backend is offline */}
+            {/* <a href="anmelden" className={styles.primaryBtn}>
               <span className={styles.btnGlow}></span>
               <span>
                 <Translate
@@ -91,7 +92,7 @@ export default function Hackathon(): JSX.Element {
                   Jetzt anmelden
                 </Translate>
               </span>
-            </a>
+            </a> */}
             <a href="docs/faq" className={styles.secondaryBtn}>
               <span>
                 <Translate id="home.hero.infoButton" description="Info button">
@@ -104,6 +105,50 @@ export default function Hackathon(): JSX.Element {
       </header>
 
       <main className={styles.mainContent}>
+        {/* After Movie Section - Moved to top for prominence */}
+        <section className={styles.afterMovieSection}>
+          <div className={styles.afterMovieGlow}></div>
+          <h2 className={styles.sectionTitle}>
+            <Translate
+              id="home.afterMovie.title"
+              description="After Movie section title"
+            >
+              Rückblick auf den GovTech Hackathon 2025
+            </Translate>
+          </h2>
+          <div className={styles.afterMovieContent}>
+            <p className={styles.afterMovieText}>
+              <Translate
+                id="home.afterMovie.text"
+                description="After Movie section text"
+              >
+                Erlebe die Highlights unseres GovTech Hackathons 2025! Von
+                kreativen Lösungen bis zu unvergesslichen Momenten – schau dir
+                das After Movie an und lass dich für das nächste Jahr
+                inspirieren.
+              </Translate>
+            </p>
+            <div className={styles.afterMovieButtonContainer}>
+              <a
+                href="https://www.linkedin.com/posts/eastsidefab_govtechhackathon-eastsidefab-sponsors-activity-7383858423467241473-Hmxs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACfciBgB60qIImMFstQptuH5FIipwQfyUF0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.afterMovieButton}
+              >
+                <span className={styles.btnGlow}></span>
+                <span>
+                  <Translate
+                    id="home.afterMovie.button"
+                    description="After Movie button"
+                  >
+                    🎬 After Movie ansehen
+                  </Translate>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Timeline Section */}
         <section className={styles.terminalSection}>
           <div className={styles.terminalHeader}>
@@ -125,7 +170,7 @@ export default function Hackathon(): JSX.Element {
                   id="home.terminal.comment"
                   description="Terminal comment"
                 >
-                  # Markiere dir den Termin: Das GovTech-Event des Jahres!
+                  # Das GovTech-Event 2025 - Erfolgreich abgeschlossen!
                 </Translate>
               </span>
             </div>
@@ -135,11 +180,10 @@ export default function Hackathon(): JSX.Element {
                   id="home.terminal.output"
                   description="Terminal output"
                 >
-                  Am 11. Oktober 2025 geht es los: In nur 48 Stunden entwickeln
+                  Am 11. Oktober 2025 ging es los: In nur 48 Stunden entwickelten
                   wir gemeinsam neue Lösungen für drängende Herausforderungen im
-                  öffentlichen Sektor. Sei dabei, wenn Kreativität und
-                  Technologie aufeinandertreffen – und hilf, die Zukunft von
-                  morgen zu gestalten.
+                  öffentlichen Sektor. Vielen Dank an alle, die dabei waren, als
+                  Kreativität und Technologie aufeinandertrafen.
                 </Translate>
               </span>
             </div>
@@ -269,8 +313,8 @@ export default function Hackathon(): JSX.Element {
           <TopicCarousel />
         </section>
 
-        {/* CTA Section */}
-        <section className={styles.ctaSection}>
+        {/* CTA Section - Commented out since registration is closed */}
+        {/* <section className={styles.ctaSection}>
           <div className={styles.ctaGlow}></div>
           <h2 className={styles.ctaTitle}>
             <Translate id="home.cta.title" description="CTA section title">
@@ -290,7 +334,7 @@ export default function Hackathon(): JSX.Element {
               </Translate>
             </a>
           </div>
-        </section>
+        </section> */}
 
         {/* Partners Section - Organizers */}
         <section className={styles.partnersSection}>

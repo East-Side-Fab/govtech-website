@@ -1,11 +1,11 @@
 ---
-title: "GovTech Hackathon"
+title: "GovTech Hackathon 2025 - Archiv"
 sidebar_position: 0
 ---
 
-# Willkommen zum GovTech Hackathon!
+# GovTech Hackathon 2025 - Archiv
 
-Herzlich willkommen zum GovTech Hackathon – **Boost the Public Sector**!
+Rückblick auf den GovTech Hackathon 2025 – **Boost the Public Sector**!
 
 ## Häufig gestellte Fragen
 
@@ -22,11 +22,11 @@ Jeder! Egal ob Entwickler, Designer, Projektmanager oder interessierte Bürger �
 Einen Laptop, Kreativität und gute Laune! WLAN, Strom und alles Weitere findest du vor Ort.
 
 ### [Kostet die Teilnahme etwas?](faq#kostet-die-teilnahme-etwas)
-Nein, die Teilnahme ist kostenlos. Du musst dich nur rechtzeitig anmelden, da die Plätze begrenzt sind.
+Nein, die Teilnahme war kostenlos.
 
 ### [Wie finde ich ein Team?](faq#wie-finde-ich-ein-team)
-Vor Ort gibt es eine Session zur Teamfindung. Alternativ kannst du schon vorher Ideen teilen.
+Vor Ort gab es eine Session zur Teamfindung.
 
 ---
 
-> **Weitere Details** findest du in den anderen Bereichen dieser Dokumentation. Nutze die Navigation links, um zu spezifischen Themen zu springen.
+> **Hinweis:** Diese Dokumentation dient als Archiv für den GovTech Hackathon 2025. Bleib dran für Updates zum nächsten Event!

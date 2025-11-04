@@ -88,6 +88,14 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card or a relevant image
     image: "img/hackathon-social-card.jpg",
+    announcementBar: {
+      id: 'hackathon_completed',
+      content:
+        '🎉 Der GovTech Hackathon 2025 ist vorbei! Danke an alle Teilnehmer. Bleib dran für 2026! | GovTech Hackathon 2025 has concluded! Thank you to all participants. Stay tuned for 2026!',
+      backgroundColor: '#22d3ee',
+      textColor: '#0c0f16',
+      isCloseable: false,
+    },
     navbar: {
       logo: {
         alt: "East Side Fab Logo",
@@ -104,7 +112,8 @@ const config: Config = {
           label: "Info",
         },
         // { to: "/events", label: "Events", position: "left" },
-        { to: "/anmelden", label: "Anmelden", position: "left" },
+        // Registration removed - event completed
+        // { to: "/anmelden", label: "Anmelden", position: "left" },
         {
           type: "localeDropdown",
           position: "right",
@@ -130,10 +139,11 @@ const config: Config = {
             //   label: "Events",
             //   to: "/events",
             // },
-            {
-              label: "Anmelden",
-              to: "/anmelden",
-            },
+            // Registration removed - event completed
+            // {
+            //   label: "Anmelden",
+            //   to: "/anmelden",
+            // },
           ],
         },
         {

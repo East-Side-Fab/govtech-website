@@ -188,7 +188,7 @@
     "description": "Hackathon name"
   },
   "events.hackathon.date": {
-    "message": "October 11 & 12, 2025",
+    "message": "October 11 & 12, 2025 (Completed)",
     "description": "Hackathon date"
   },
   "events.hackathon.location": {
@@ -224,7 +224,7 @@
     "description": "Hero tagline"
   },
   "home.hero.subtitle": {
-    "message": "The Hackathon on October 11 & 12, 2025 in Saarland",
+    "message": "Thank you to all participants! See you next year! 🎉",
     "description": "Hero subtitle"
   },
   "home.hero.explanation": {
@@ -244,11 +244,11 @@
     "description": "Terminal title"
   },
   "home.terminal.comment": {
-    "message": "# Mark your calendar: The GovTech event of the year!",
+    "message": "# The GovTech event of 2025 - Completed!",
     "description": "Terminal comment"
   },
   "home.terminal.output": {
-    "message": "It starts on October 11, 2025: In just 48 hours, we will develop new solutions together for pressing challenges in the public sector. Be there when creativity and technology meet - and help shape tomorrow's future.",
+    "message": "On October 11, 2025, it began: In just 48 hours, we developed new solutions together for pressing challenges in the public sector. Thank you to everyone who joined us when creativity and technology came together.",
     "description": "Terminal output"
   },
   "home.where.title": {
@@ -274,6 +274,18 @@
   "home.challenges.title": {
     "message": "Challenges",
     "description": "Challenges section title"
+  },
+  "home.afterMovie.title": {
+    "message": "Recap of the GovTech Hackathon 2025",
+    "description": "After Movie section title"
+  },
+  "home.afterMovie.text": {
+    "message": "Experience the highlights of our GovTech Hackathon 2025! From creative solutions to unforgettable moments – watch the after movie and get inspired for next year.",
+    "description": "After Movie section text"
+  },
+  "home.afterMovie.button": {
+    "message": "🎬 Watch After Movie",
+    "description": "After Movie button"
   },
   "home.cta.title": {
     "message": "Be Part of the Change",

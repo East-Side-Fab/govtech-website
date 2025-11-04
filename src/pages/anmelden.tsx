@@ -324,15 +324,27 @@ export default function RegistrationPage(): React.ReactElement {
 
       <main className={styles.mainContent}>
         <section className={styles.registrationSection}>
-          <p className={styles.sectionText}>
-            <Translate id="registration.section.description" description="Registration section description">
-              Melde dich für den GovTech Hackathon an und werde Teil unserer
-              Community. Wir informieren dich über kommende Veranstaltungen,
-              Challenges und wichtige Updates.
-            </Translate>
-          </p>
-
-          <RegistrationForm />
+          <div className={styles.closedNotice}>
+            <h2>🎉 Der GovTech Hackathon 2025 ist abgeschlossen!</h2>
+            <p className={styles.sectionText}>
+              Vielen Dank an alle Teilnehmer für das großartige Event! Die Registrierung
+              für den GovTech Hackathon 2025 ist nun geschlossen.
+            </p>
+            <p className={styles.sectionText}>
+              Interessiert an zukünftigen Events? Schau dir das <Link to="/">After Movie</Link> an
+              und bleib dran für Updates zum GovTech Hackathon 2026!
+            </p>
+            <hr />
+            <h2>🎉 GovTech Hackathon 2025 has concluded!</h2>
+            <p className={styles.sectionText}>
+              Thank you to all participants for the amazing event! Registration
+              for the GovTech Hackathon 2025 is now closed.
+            </p>
+            <p className={styles.sectionText}>
+              Interested in future events? Check out the <Link to="/">After Movie</Link> and
+              stay tuned for updates about GovTech Hackathon 2026!
+            </p>
+          </div>
         </section>
       </main>
     </Layout>
